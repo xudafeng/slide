@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>archives</title>
+<style>
+/* invert */
+.invert {background: #fff;}
+.invert #page .page {background: #fff;color: #000;}
+.invert .right-top {color: #000;}
+.invert .inner blockquote p,
+.invert .inner pre,
+.invert .inner code {color: #fff;background:#000;margin-left: 6px;}
+.invert .inner pre,
+.invert .inner ul,
+.invert .inner ol {color:#fff;}
+.invert .inner li {color:#000;}
+/* base */
+html{margin:0;padding:0;height:100%;}
+body {margin:0;padding:0;height:100%;background: #000;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;opacity:
+1;color:#fff;font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
+#page {width:100%;height:100%;position:relative;overflow-x:hidden;overflow-y:auto;}
+.page{color:white;width:100%;height:100%;overflow:hidden;text-align:left;position:absolute;opacity:0;transition:transform
+.8s ease;background:black;}
+.prev {opacity:0.2;transform: translate(-100%, 0);}
+.current {opacity:1;z-index:999;}
+.next {opacity:0.2;transform: translate(100%, 0);}
+.right-top {transition:all .5s ease;position: absolute;top: 20px;right:
+20px;z-index: 99999;opacity: 0.4;}
+.right-top:hover {opacity: 0.8;}
+.switcher {background-color: rgba(123, 123, 123, 0.1);border: none;top:
+0;font-size: 40px;margin: 0;max-width: 150px;min-width: 80px;outline:
+none;padding: 0;position: absolute;top: 0;z-index: 9999;color: rgba(158, 158,
+158, 0.5);height:100%;}
+.switcher:hover, .switcher:focus {cursor: pointer;background-color: rgba(123, 123, 123, 0.2);}
+#copyright { position: absolute; bottom: 20px; left: 50%; margin-left: -192px;
+display: none;width: 384px;font-weight:bold;}
+#copyright a {text-decoration: none;color: #D1C556;font-weight:bold;}
+/* inner */
+.inner {margin: 40px 100px;}
+.inner a {text-decoration: none;color: #e7ad52;cursor:pointer;font-weight: bold;}
+.inner h1 {font-size:55px;padding-bottom: 8px;}
+.inner h2 {font-size:40px;padding-bottom: 20px;}
+.inner h3 {font-size:30px;padding-bottom: 10px;}
+.inner h4 {font-size:25px;padding-bottom: 5px;}
+.inner p,
+.inner blockquote,
+.inner pre {margin: 0;font-size: 26px;line-height: 1.4em;margin-top:30px;}
+.inner blockquote,
+.inner pre,
+.inner code {background: #2f3129;border-radius: 4px;padding: 2px
+4px;margin-right:10px;margin-top:30px;font-weight:bold;overflow:hidden;word-wrap: break-word;}
+.inner blockquote p {margin-top:0;word-spacing: 4px;padding: 4px;}
+.inner pre
+.inner ul,
+.inner ol{font-size: 26px;line-height:1.4em;background:rgb(47, 47, 47);border-radius: 10px;padding: 10px 50px;}
+.inner li {color: #fff;padding: 10px 4px;font-size: 22px;}
+.inner hr {display:none;margin-top:10px;}
+.inner table { table-layout:fixed; empty-cells:show; border-collapse:
+collapse;margin:0 auto; border:2px solid #666; }
+.inner table th,
+.inner table td{text-align: left; border:1px solid #666; padding: 0.8em 1em;}
+.inner table th { background: rgba(244, 253, 255, 0.24);font-weight: bold;padding: 1em;}
+.inner img{transition: all 1s linear;width:auto;}
+.inner img:hover {width: 100%!important;}
+/* thumbnail */
+.thumbnail {background: #000;}
+.thumbnail .page {position: static;display: inline-block;overflow:
+hidden;cursor: pointer;width: 20%;height: 20%;background: rgba(128, 128, 128,
+0.35);margin-left: 30px;margin-top: 20px; transform: none; border-radius:
+10px;opacity:1;}
+.thumbnail .page .inner {padding: 4px 10px; margin: 0;text-align: center;}
+.thumbnail .page .inner h1,
+.thumbnail .page .inner h2 {font-size: 22px; text-align: center;}
+.thumbnail .page .inner ul,
+.thumbnail .page .inner li,
+.thumbnail .page .inner ol,
+.thumbnail .page .inner pre,
+.thumbnail .page .inner img,
+.thumbnail .page .inner p,
+.thumbnail .page .inner code,
+.thumbnail .page .inner h3,
+.thumbnail .page .inner h4,
+.thumbnail .page .inner h5,
+.thumbnail .page .inner h6,
+.thumbnail .page .inner table,
+.thumbnail .page .inner i,
+.thumbnail .page .inner strong,
+.thumbnail .page .inner b,
+.thumbnail .page .inner hr,
+.thumbnail .page .inner blockquote{display: none;}
+.thumbnail #copyright {display: block;}
+.thumbnail .switcher {display: none!important;}
+/* highlight */
+.hljs{display:block;overflow-x:auto;padding:.5em;background:#fdf6e3;color:#657b83;-webkit-text-size-adjust:none}.hljs-comment,.hljs-template_comment,.diff .hljs-header,.hljs-doctype,.hljs-pi,.lisp .hljs-string,.hljs-javadoc{color:#93a1a1}.hljs-keyword,.hljs-winutils,.method,.hljs-addition,.css .hljs-tag,.hljs-request,.hljs-status,.nginx .hljs-title{color:#859900}.hljs-number,.hljs-command,.hljs-string,.hljs-tag .hljs-value,.hljs-rules .hljs-value,.hljs-phpdoc,.hljs-dartdoc,.tex .hljs-formula,.hljs-regexp,.hljs-hexcolor,.hljs-link_url{color:#2aa198}.hljs-title,.hljs-localvars,.hljs-chunk,.hljs-decorator,.hljs-built_in,.hljs-identifier,.vhdl .hljs-literal,.hljs-id,.css .hljs-function{color:#268bd2}.hljs-attribute,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number,.hljs-constant,.hljs-class .hljs-title,.hljs-parent,.hljs-type,.hljs-link_reference{color:#b58900}.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-pragma,.hljs-shebang,.hljs-symbol,.hljs-symbol .hljs-string,.diff .hljs-change,.hljs-special,.hljs-attr_selector,.hljs-subst,.hljs-cdata,.css .hljs-pseudo,.hljs-header{color:#cb4b16}.hljs-deletion,.hljs-important{color:#dc322f}.hljs-link_label{color:#6c71c4}.tex .hljs-formula{background:#eee8d5}
+
+</style>
+<base target="_blank"/>
+</head>
+<body>
+<input type="hidden" id="mode" value=""/>
+<div id="page">
+<h1 id="javascript-nodejs-">JavaScript/NodeJS 基础</h1>
+<h1 id="-">基础篇</h1>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2000px-Node.js_logo.svg.png" height="163"/></p>
+<h2 id="nodejs-">Nodejs 简介</h2>
+<ul>
+<li>Node.js 诞生于 2009 年，是 JavaScript 在服务器端的一个运行环境。</li>
+<li>它的 JavaScript 解释器，采用了 Google 公司的 V8 引擎。</li>
+<li>主要用于方便地搭建响应速度快、易于扩展的网络应用。</li>
+<li>Node.js 使用事件驱动，非阻塞 I/O 模型使其轻量和高效。</li>
+</ul>
+<h2 id="-">基本使用</h2>
+<p>例如运行当前目录下的 example.js 文件，可以这样写。</p>
+<pre><code class="lang-bash"><span class="hljs-variable">$ </span>node ./example.js
+</code></pre>
+<h2 id="-">跳个舞</h2>
+<pre><code class="lang-bash"><span class="hljs-variable">$ </span>node ./fun-dance.js
+</code></pre>
+<h2 id="repl-">REPL 环境</h2>
+<p>直接在命令行执行 <code>node</code> 命令，进入 <code>REPL</code>（Read–eval–print loop，&quot;读取-求值-输出&quot;循环） 环境。</p>
+<pre><code class="lang-bash">$ node
+<span class="hljs-blockquote">&gt; 1 + 2</span>
+<span class="hljs-blockquote">&gt; 3</span>
+</code></pre>
+<h2 id="-">语法</h2>
+<p>熟悉 Java、C 和 Perl 这些语言的开发者会发现 JavaScript
+的语法很容易掌握，因为它借鉴了这些语言的优秀语法。</p>
+<ul>
+<li>区分大小写</li>
+<li>每行结尾的分号加分号</li>
+<li>注释<ul>
+<li>单行注释以双斜杠开头（//）</li>
+<li>多行注释以单斜杠和星号开头（<code>/*</code>），以星号和单斜杠结尾（<code>*/</code>）</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">关键字和保留字</h2>
+<p>关键字列表：break、case、catch、continue、default、delete、do、else、finally、for ...</p>
+<p>保留字列表：abstract、boolean、byte、char、class、const、debugger、double、enum、export、extends、final、float、goto、implements、import ...</p>
+<h2 id="-">变量</h2>
+<p>变量声明</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> test = <span class="hljs-string">'hi'</span>;
+<span class="hljs-keyword">var</span> test = <span class="hljs-string">'hi'</span>, age = <span class="hljs-number">25</span>;
+</code></pre>
+<p>JavaScript 是<strong>弱类型</strong>的，所以无需明确的类型声明。</p>
+<ul>
+<li>与 Java 和 C 不同，js中的变量无特定的类型，定义变量时只用 var 运算符，可以将它初始化并能改变为任意类型的值。如：</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> <span class="hljs-built_in">num</span> = <span class="hljs-number">25</span>;
+<span class="hljs-built_in">num</span> = <span class="hljs-keyword">true</span>;  <span class="hljs-comment">//更改为bool类型</span>
+</code></pre>
+<h2 id="-">值</h2>
+<h3 id="-">基本数据类型</h3>
+<ul>
+<li>number 、string 、undefined 、null、boolean</li>
+</ul>
+<h3 id="-">引用类型</h3>
+<ul>
+<li>Object、Array、Date、Function、RegExp、String、Number、Boolean</li>
+</ul>
+<h3 id="-">区别</h3>
+<p>基本类型的变量中存储的是简单的数据段，而引用类型变量存储的是指向对象的引用</p>
+<h2 id="number">number</h2>
+<p>定义</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> <span class="hljs-built_in">num</span> = <span class="hljs-number">8.6</span>;
+</code></pre>
+<p>JavaScript 中 number 其实都是浮点数，那么问题来了</p>
+<pre><code class="lang-js"><span class="hljs-attribute">0.3 ==</span>=<span class="hljs-string"> 0.1 + 0.2;</span>
+</code></pre>
+<p>常用方法：toFixed()、toString() <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">更多方法参考</a></p>
+<h2 id="string">string</h2>
+<p>定义</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">'abc123'</span>;
+</code></pre>
+<p>字符串拼接：</p>
+<pre><code class="lang-js"><span class="hljs-keyword">str</span> + <span class="hljs-string">'b'</span>;
+</code></pre>
+<p>常用方法 : indexOf() 、replace() 、split() ... <a href="http://www.w3school.com.cn/jsref/jsref_obj_string.asp">更多方法见</a></p>
+<h2 id="null">null</h2>
+<p>用于表示尚未存在的对象</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = <span class="hljs-literal">null</span>;
+</code></pre>
+<h2 id="undefined">undefined</h2>
+<p>任何没有被赋值的变量都有 undefined 值</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a;
+<span class="hljs-keyword">typeof</span> a;
+
+<span class="hljs-keyword">var</span> b = {};
+b.xx;
+</code></pre>
+<h2 id="boolean">boolean</h2>
+<p>有两个值，true 和 false</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-literal">false</span>;
+</code></pre>
+<h2 id="object">Object</h2>
+<p>Object 是一个属性的集合，键值对</p>
+<p>所有对象都由 Object 继承而来，Object 对象中的所有属性和方法都会出现在其他对象中</p>
+<p>常用属性/方法：</p>
+<ul>
+<li>constructor</li>
+<li>prototype</li>
+<li>hasOwnProperty()</li>
+<li>isPrototypeOf()</li>
+<li>toString()</li>
+<li>valueOf()</li>
+</ul>
+<h2 id="array">Array</h2>
+<ul>
+<li>语法：</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [];
+<span class="hljs-keyword">var</span> b = [<span class="hljs-string">'facebook'</span>, <span class="hljs-string">'google'</span>];
+</code></pre>
+<ul>
+<li>常用属性<ul>
+<li>length 设置或返回数组中元素的数目</li>
+</ul>
+</li>
+</ul>
+<h2 id="foreach-callback-thisarg-">forEach(callback[, thisArg])</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [<span class="hljs-string">'xx'</span>, <span class="hljs-string">'yy'</span>];
+a.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item, <span class="hljs-keyword">index</span>)</span> <span class="hljs-comment">{
+  console.log(item, index);
+}</span>);</span>
+</code></pre>
+<h2 id="join-push">join, push</h2>
+<p>join([separator = &#39;,&#39;])</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a1 = [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>];
+a1.<span class="hljs-keyword">join</span>(<span class="hljs-string">'|'</span>);
+</code></pre>
+<p>push(element1, ..., elementN) </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a1 = [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>];
+<span class="hljs-keyword">var</span> a2 = a1.push(<span class="hljs-string">'c'</span>);
+a1;
+a2;
+</code></pre>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">更多手册</a></li>
+</ul>
+<h2 id="date">Date</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+d.getFullYear();
+</code></pre>
+<p>设置、获取时间方法</p>
+<ul>
+<li>getDate()</li>
+<li>getDay()</li>
+<li>getMonth()</li>
+<li>getFullYear()</li>
+<li>setDate()</li>
+<li>更多方法见 <a href="http://www.w3school.com.cn/jsref/jsref_obj_date.asp">http://www.w3school.com.cn/jsref/jsref_obj_date.asp</a></li>
+</ul>
+<h2 id="regexp">RegExp</h2>
+<ul>
+<li>语法</li>
+</ul>
+<pre><code class="lang-js">/pattern/<span class="hljs-keyword">flags</span>  <span class="hljs-comment">//直接量语法</span>
+<span class="hljs-keyword">new</span> RegExp(pattern[, <span class="hljs-keyword">flags</span>])  <span class="hljs-comment">//创建 RegExp 对象的语法</span>
+</code></pre>
+<ul>
+<li>实例</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-regexp">/\d/g</span>;
+<span class="hljs-keyword">var</span> b = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">'\\d'</span>, <span class="hljs-string">'g'</span>);
+</code></pre>
+<ul>
+<li>参考：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp</a></li>
+</ul>
+<h2 id="-tostring">类型转换 toString</h2>
+<p>Boolean 值、数字和字符串的原始值都是伪对象，对象就都继承了 Object 的 toString() 方法</p>
+<pre><code class="lang-js">var <span class="hljs-variable">a =</span> <span class="hljs-constant">false</span>;
+a.<span class="hljs-built_in">toString</span>();
+
+var <span class="hljs-variable">b =</span> <span class="hljs-number">10</span>;
+b.<span class="hljs-built_in">toString</span>(<span class="hljs-number">2</span>);
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>].<span class="hljs-built_in">toString</span>();
+</code></pre>
+<h2 id="-parseint-parsefloat">类型转换 parseInt/parseFloat</h2>
+<ul>
+<li>parseInt(string, radix); string 可以是非10进制形式， radix 默认是10</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">parseInt</span>(<span class="hljs-string">'0xA'</span>);
+<span class="hljs-built_in">parseInt</span>(<span class="hljs-string">'a1'</span>, <span class="hljs-number">16</span>);
+<span class="hljs-built_in">parseInt</span>(<span class="hljs-string">'a1'</span>);
+<span class="hljs-built_in">parseInt</span>(<span class="hljs-string">'1a'</span>);
+</code></pre>
+<p>0位是数字，查到非数字为止，否则返回 NaN</p>
+<ul>
+<li>parseFloat(string) ; 与 parseInt 类似，但 string 必须是10进制形式</li>
+<li>Number(value)</li>
+<li>String(value)</li>
+</ul>
+<p>参考：<a href="http://www.w3school.com.cn/js/pro_js_typeconversion.asp">http://www.w3school.com.cn/js/pro_js_typeconversion.asp</a></p>
+<h2 id="-">操作符</h2>
+<ul>
+<li>一元操作符
+  ++ -- - +</li>
+<li>位操作符
+  ~ &amp; | ^ &lt;&lt; &gt;&gt; &gt;&gt;&gt;</li>
+<li>布尔操作符
+  ! &amp;&amp; ||</li>
+<li>乘性操作符 * / %</li>
+<li>加性操作符 + -</li>
+<li>关系操作符
+  &lt; &gt; &lt;= &gt;=</li>
+<li>相等操作符
+  == != === !==</li>
+<li>条件操作符
+  var max = (num1 &gt; num2) ? num1 : num2</li>
+<li>赋值操作符
+  = *= /= %= += -= &lt;&lt;= &gt;&gt;=</li>
+<li>逗号操作符
+  var num = (5, 1, 4, 8); // num 的值为8</li>
+</ul>
+<h2 id="-">==、!=、===、!==</h2>
+<p>思考以下结果</p>
+<pre><code class="lang-js"><span class="hljs-string">'5'</span> == <span class="hljs-number">5</span>;
+<span class="hljs-string">'5'</span> === <span class="hljs-number">5</span>;
+</code></pre>
+<p><code>===、!== ,不会做类型转换, 约定等性判断必须用全等/非全等号</code></p>
+<h2 id="-">逻辑与/逻辑或 - 短路求值</h2>
+<p>只要最终的结果已经可以确定是真或假，求值过程便终止，两种短路场景</p>
+<pre><code class="lang-js"><span class="hljs-literal">true</span> || anything;
+<span class="hljs-literal">false</span> &amp;&amp; anything;
+</code></pre>
+<ul>
+<li>例子</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-constant">false</span> &amp;&amp; console.<span class="hljs-command">log</span>(<span class="hljs-number">1</span>);
+</code></pre>
+<h1 id="-">控制语句</h1>
+<h2 id="if-">if 语句</h2>
+<pre><code class="lang-js"><span class="hljs-tag">if</span> (i &gt; <span class="hljs-number">30</span>) {
+  <span class="hljs-attribute">console</span>.<span class="hljs-function">log</span>(<span class="hljs-string">'大于 30'</span>);
+} <span class="hljs-tag">else</span> <span class="hljs-tag">if</span> (i &lt; <span class="hljs-number">0</span>) {
+  <span class="hljs-attribute">console</span>.<span class="hljs-function">log</span>(<span class="hljs-string">'小于 0'</span>);
+} <span class="hljs-tag">else</span> {
+  <span class="hljs-attribute">console</span>.<span class="hljs-function">log</span>(<span class="hljs-string">'在 0 到 30 之间'</span>);
+}
+</code></pre>
+<h2 id="switch-">switch 语句</h2>
+<p> switch 语句是 if 语句的兄弟语句。</p>
+<pre><code class="lang-js"><span class="hljs-keyword">switch</span> (i) {
+  <span class="hljs-keyword">case</span> <span class="hljs-number">20</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'20'</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">30</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'30'</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'other'</span>);
+    <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+<h2 id="while-do-while-">while、do-while 语句</h2>
+<p>do-while 语句。 do-while 语句是后测试循环，即退出条件在执行循环内部的代码之后计算。这意味着在计算表达式之前，至少会执行循环主体一次。</p>
+<pre><code class="lang-js">var i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span> {
+  i += <span class="hljs-number">2</span>;
+} <span class="hljs-keyword">while</span> <span class="hljs-comment">(i &lt; 10)</span>;
+</code></pre>
+<p>while 语句。 while 语句是前测试循环。这意味着退出条件是在执行循环内部的代码之前计算的。因此，循环主体可能根本不被执行。</p>
+<pre><code class="lang-js">var i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span> <span class="hljs-comment">(i &lt; 10)</span> {
+  i += <span class="hljs-number">2</span>;
+}
+</code></pre>
+<h2 id="for-for-in-">for、for-in 语句</h2>
+<p>for 语句是前测试循环，而且在进入循环之前，能够初始化变量，并定义循环后要执行的代码。</p>
+<pre><code class="lang-js"><span class="hljs-reserved">var</span> iCount = <span class="hljs-number">6</span>;
+<span class="hljs-keyword">for</span> (<span class="hljs-reserved">var</span> i = <span class="hljs-number">0</span>; i &lt; iCount; i++) {
+  <span class="hljs-built_in">console</span>.log(i);
+}
+</code></pre>
+<p>for-in 语句是严格的迭代语句，用于枚举对象的属性。</p>
+<pre><code class="lang-js"><span class="hljs-keyword">for</span> (<span class="hljs-reserved">var</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">global</span>) {
+  <span class="hljs-built_in">console</span>.log(i);
+}
+</code></pre>
+<h2 id="break-continue-">break、continue 语句</h2>
+<p>break 和 continue 语句。 它们的不同之处：break 语句可以立即退出循环，阻止再次反复执行任何代码。而 continue 语句只是退出当前循环，根据控制表达式还允许继续进行下一次循环。</p>
+<pre><code class="lang-js"><span class="hljs-reserved">var</span> iNum = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span> (<span class="hljs-reserved">var</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+  <span class="hljs-keyword">if</span> (i % <span class="hljs-number">5</span> === <span class="hljs-number">0</span>) {
+    <span class="hljs-regexp">//</span><span class="hljs-keyword">break</span>;      <span class="hljs-regexp">//</span>输出什么？
+    <span class="hljs-regexp">//</span><span class="hljs-keyword">continue</span>;   <span class="hljs-regexp">//</span>输出什么？
+  }
+  iNum++;
+}
+<span class="hljs-built_in">console</span>.log(iNum);
+</code></pre>
+<h2 id="-">函数</h2>
+<p>函数在 JavaScript 非常重要</p>
+<ul>
+<li>我们能像传递变量一样传递函数</li>
+<li>在函数中返回函数</li>
+<li>在其他函数中使用函数</li>
+</ul>
+<h2 id="-">函数定义与调用</h2>
+<p>函数是由这样的方式进行声明的：关键字 function、函数名、一组参数，以及置于括号中的待执行代码。</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">say</span><span class="hljs-params">(name, msg)</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello '</span> + name + msg);
+}
+say(<span class="hljs-string">'David'</span>, <span class="hljs-string">' Nice to meet you!'</span>) <span class="hljs-comment">//调用函数</span>
+
+<span class="hljs-comment">//函数直接量</span>
+<span class="hljs-keyword">var</span> sayHi = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{ };
+sayHi();
+</code></pre>
+<h2 id="-">函数参数</h2>
+<p>在 JavaScript 中无论是基本类型还是引用类型，函数参数都是按值传递的，先看基本类型：</p>
+<pre><code class="lang-js">function test(<span class="hljs-built_in">num</span>) {
+  <span class="hljs-built_in">num</span> += <span class="hljs-number">10</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">num</span>;
+}
+<span class="hljs-keyword">var</span> <span class="hljs-built_in">num</span> = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> res = test(<span class="hljs-built_in">num</span>);
+console.log(<span class="hljs-built_in">num</span>);
+console.log(res);
+</code></pre>
+<h2 id="-">函数参数</h2>
+<p>再看引用类型：</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setName</span><span class="hljs-params">(obj)</span> </span>{
+  obj.name = <span class="hljs-string">'facebook'</span>;
+}
+<span class="hljs-keyword">var</span> company = {
+  name: <span class="hljs-string">'google'</span>
+};
+setName(company);
+<span class="hljs-built_in">console</span>.log(company.name);
+</code></pre>
+<h2 id="-">函数参数</h2>
+<p>总的来说，基本类型的参数复制的是具体的值，而引用类型的参数复制的是这个对象的引用。</p>
+<h2 id="-">回调函数</h2>
+<ul>
+<li>是把一个函数作为参数传递。</li>
+<li>回调函数，也被称为高阶函数，是一个被作为参数传递给另一个函数的函数，回调函数在另一个函数中被调用。</li>
+</ul>
+<pre><code class="lang-js">function fn(arg, callback) {
+  <span class="hljs-keyword">var</span> num = arg * arg;
+  callback(num);
+}
+fn(<span class="hljs-number">2</span>, function(<span class="hljs-literal">result</span>) {
+  console.log(<span class="hljs-literal">result</span>);
+});
+</code></pre>
+<h2 id="-">函数返回值</h2>
+<p>函数如何返回值</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span><span class="hljs-params">(num1, num2)</span> </span>{
+  <span class="hljs-keyword">return</span> num1 + num2;
+}
+</code></pre>
+<p>函数只需要使用 return 运算符后跟要返回的值即可。 与在 Java 中一样，函数在执行过 return 语句后立即停止代码。因此，return 语句后的代码都不会被执行。</p>
+<p>函数默认返回值是什么？</p>
+<h2 id="javascript-">JavaScript 进阶</h2>
+<p>我们会通过以下几个个方面来讨论 JavaScript 高级特性</p>
+<ol>
+<li>对象</li>
+<li>this</li>
+<li>原型</li>
+<li>构造函数</li>
+<li>原型链</li>
+<li>作用域</li>
+<li>闭包</li>
+</ol>
+<p>以上7个方面，前面是理解后面的基础，在构造函数和继承理解遇到困惑时请回顾前面两个概念来帮助理解。</p>
+<h2 id="-">对象</h2>
+<blockquote>
+<p>首先要有个对象</p>
+</blockquote>
+<h3 id="-">典型对象</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> jane = {
+  name: <span class="hljs-string">'Jane'</span>,
+  describe: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Person named '</span> + <span class="hljs-keyword">this</span>.name;
+  }
+};
+</code></pre>
+<h2 id="-">对象的“.”操作符</h2>
+<ul>
+<li>读取属性</li>
+</ul>
+<pre><code class="lang-js">jane<span class="hljs-class">.name</span>
+jane.describe
+</code></pre>
+<ul>
+<li>调用方法</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-attribute">jane</span>.<span class="hljs-function">describe</span>();
+</code></pre>
+<ul>
+<li>设置属性值</li>
+</ul>
+<pre><code class="lang-js">jane.name = <span class="hljs-string">'John'</span>;
+</code></pre>
+<h2 id="-">对象的“[]”操作符</h2>
+<p>&quot;[]&quot;操作符让我们可以使用表达式来使用对象的属性和方法</p>
+<pre><code class="lang-js"><span class="hljs-attribute">obj</span>[<span class="hljs-string">'some'</span> + <span class="hljs-string">'Property'</span>] || obj[propKey];    <span class="hljs-comment">//表达式 || 变量</span>
+</code></pre>
+<p>操作符内部强制转换成字符串</p>
+<pre><code class="lang-js">obj[<span class="hljs-number">3</span> + <span class="hljs-number">3</span>];  <span class="hljs-regexp">//</span> <span class="hljs-symbol">key:</span> 强制转换为 <span class="hljs-string">'6'</span>
+</code></pre>
+<p>调用对象方法</p>
+<pre><code class="lang-js">obj[<span class="hljs-link_label">'myMethod'</span>](<span class="hljs-link_url"></span>);
+</code></pre>
+<p>设置属性或方法</p>
+<pre><code class="lang-js">obj[<span class="hljs-string">'anotherProperty'</span>] = <span class="hljs-string">'def'</span>;
+</code></pre>
+<h2 id="-">删除属性</h2>
+<p>两种删除属性或方法的方式,如果我们删掉一个对象属性，那么它将在对象中彻底删除。</p>
+<pre><code class="lang-js"><span class="hljs-operator"><span class="hljs-keyword">delete</span> obj.hello;</span>
+<span class="hljs-operator"><span class="hljs-keyword">delete</span> obj[<span class="hljs-string">'hello'</span>];</span>
+</code></pre>
+<h2 id="-">一个构造函数例子</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Company</span><span class="hljs-params">(name)</span> </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+}
+Company.prototype.showCompany = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);
+};
+
+<span class="hljs-keyword">var</span> google = <span class="hljs-keyword">new</span> Company(<span class="hljs-string">'谷歌'</span>);
+
+google.showName();   <span class="hljs-comment">//输出什么？</span>
+</code></pre>
+<h2 id="this">this</h2>
+<p>this 是函数的隐含参数`，在 JavaScript 中，this 指向函数执行时的当前对象。</p>
+<ul>
+<li>严格模式下，this 默认值为 ’undefined‘</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bankCard</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-pi">  'use strict'</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+}
+bankCard() === <span class="hljs-literal">undefined</span>
+</code></pre>
+<ul>
+<li>对象方法：this 指向该方法所在的对象</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = {
+  <span class="hljs-keyword">method</span>: bankCard
+};
+
+obj.<span class="hljs-keyword">method</span>() === obj
+</code></pre>
+<h2 id="this-">this 改变</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> work = {
+  money: <span class="hljs-number">9999</span>,
+  goodJob: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> ++<span class="hljs-keyword">this</span>.money;
+  }
+};
+
+<span class="hljs-keyword">var</span> func = work.goodJob;
+func();
+
+work.goodJob();
+</code></pre>
+<h2 id="this">this</h2>
+<p>怎么会这样？</p>
+<p>这里很容易混淆，在调用 func() 时，this 已经指向 global 对象了</p>
+<h2 id="-">思考题</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> nameObj = { 
+  name: <span class="hljs-string">'Tom'</span>,  
+  showName: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{  
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);  
+  }, 
+  waitShowName: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{  
+    <span class="hljs-keyword">this</span>.showName();
+    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">this</span>.showName();
+    }, <span class="hljs-number">1000</span>);
+  }
+};
+
+nameObj.waitShowName();
+</code></pre>
+<h2 id="-this">维护 this</h2>
+<p>约定上，我们会使用 self 暂存 this</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> nameObj = {
+  name: <span class="hljs-string">'Tom'</span>,
+  showName: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);
+  },
+  waitShowName: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">this</span>.showName();
+    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+      self.showName();
+    }, <span class="hljs-number">1000</span>);
+  }
+};
+
+nameObj.waitShowName();
+</code></pre>
+<h2 id="-">原型</h2>
+<p>每个 JavaScript 函数都有 prototype 属性，这个属性引用了一个对象，这个对象就是原型对象。原型对象初始化的时候是空的，我们可以在里面自定义任何属性和方法，这些方法和属性都将被该构造函数所创建的对象继承。</p>
+<ol>
+<li><p>实例就是通过构造函数创建的。实例一创造出来就具有 constructor 属性（指向构造函数）和 _<em>proto_</em> 属性（指向原型对象），</p>
+</li>
+<li><p>构造函数中有一个 prototype 属性，这个属性是一个指针，指向它的原型对象。</p>
+</li>
+<li><p>原型对象内部也有一个指针（constructor 属性）指向构造函数。</p>
+</li>
+<li><p>实例可以访问原型对象上定义的属性和方法。</p>
+</li>
+</ol>
+<h2 id="-">分析构造函数</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Company</span><span class="hljs-params">(name)</span> </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+}
+Company.prototype.showCompany = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);
+};
+
+<span class="hljs-keyword">var</span> google = <span class="hljs-keyword">new</span> Company(<span class="hljs-string">'谷歌'</span>);
+google.showCompany();
+</code></pre>
+<h2 id="-">原型链实例</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Company</span><span class="hljs-params">(name)</span> </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+}
+Company.prototype.showCompany = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);
+};
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Google</span><span class="hljs-params">(name)</span> </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+}
+Google.prototype = <span class="hljs-keyword">new</span> Company();
+Google.prototype.constructor = Google; 
+Google.prototype.showCompany = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'巨头公司'</span> + <span class="hljs-keyword">this</span>.name);
+};
+<span class="hljs-keyword">var</span> google = <span class="hljs-keyword">new</span> Google(<span class="hljs-string">'谷歌'</span>);
+google.showCompany();
+<span class="hljs-keyword">var</span> facebook = <span class="hljs-keyword">new</span> Company(<span class="hljs-string">'脸谱'</span>);
+facebook.showCompany();
+</code></pre>
+<h2 id="-">思考：</h2>
+<ol>
+<li>修改 Company.prototype.showCompany 方法会出现什么情况</li>
+<li>删除 Google.prototype.showCompany 方法会出现什么情况</li>
+</ol>
+<h2 id="-javascript-">深入理解 JavaScript 的变量作用域</h2>
+<p><code>在学习 JavaScript 的变量作用域之前，我们应当明确几点：</code></p>
+<ul>
+<li><p>JavaScript 的变量作用域是基于作用域链的。</p>
+</li>
+<li><p>JavaScript 没有块级作用域。</p>
+</li>
+</ul>
+<h2 id="-">作用域实例分析</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-string">'0'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">level0</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">var</span> a = <span class="hljs-string">'1'</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">level1</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> a = <span class="hljs-string">'2'</span>;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">level2a</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-built_in">console</span>.log(a);
+    }
+    <span class="hljs-built_in">console</span>.log(a);
+
+    level2a();
+  }
+  <span class="hljs-built_in">console</span>.log(a);
+  level1();
+}
+level0();
+</code></pre>
+<h2 id="javascript-">JavaScript 作用域链要点</h2>
+<ul>
+<li><p>JavaScript 的作用域链。</p>
+</li>
+<li><p>函数体内部，局部变量的优先级比同名的全局变量高。</p>
+</li>
+<li><p>JavaScript 没有块级作用域。</p>
+</li>
+<li><p>未使用<code>var</code>关键字定义的变量都是全局变量。</p>
+</li>
+<li><p>全局变量都是全局对象的属性。</p>
+</li>
+</ul>
+<h2 id="-">闭包</h2>
+<blockquote>
+<p>闭包（closure）是 JavaScript 语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。</p>
+</blockquote>
+<ul>
+<li><p>闭包 是指有权访问另一个函数作用域中的变量的函数</p>
+</li>
+<li><p>创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的局部变量</p>
+</li>
+<li><p>一般函数执行完毕后，局部活动对象就被销毁，内存中仅仅保存全局作用域。使用闭包可以把局部变量驻留在内存中，成为封装的局部私有变量。</p>
+</li>
+</ul>
+<h2 id="-">闭包实例</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getStaffNum</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">var</span> staffNum = <span class="hljs-number">5000</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    staffNum++;
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Num is '</span> + staffNum);
+  }
+}
+
+<span class="hljs-keyword">var</span> staffNum = getStaffNum();
+
+staffNum(); <span class="hljs-comment">// 输出什么？</span>
+
+staffNum(); <span class="hljs-comment">// 输出什么？</span>
+</code></pre>
+<h1 id="-">实战篇</h1>
+<ul>
+<li>tnpm</li>
+<li>package.json</li>
+</ul>
+<h2 id="node-">node模块</h2>
+<p>Node.js 采用模块化结构，遵照 <a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJS规范</a>的定义和使用。模块与文件是一一对应的。加载一个模块，实际上就是加载对应的一个模块文件。</p>
+<p>require 方法用于指定加载模块。</p>
+<pre><code class="lang-js"><span class="hljs-reserved">var</span> a = <span class="hljs-built_in">require</span>(<span class="hljs-string">'a'</span>);
+</code></pre>
+<p>上面代码表明，以当前目录下的<code>a.js</code>文件为路径，加载名为<code>a</code>的模块。由于 require
+ 方法默认加载后缀为<code>.js</code>的文件，因此可以把后缀省略，所以也可以直接如下写法。</p>
+<pre><code class="lang-js"><span class="hljs-reserved">var</span> a = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./a'</span>);
+</code></pre>
+<h2 id="-">系统模块</h2>
+<p>Node.js 系统提供了一系列功能模块，与操作系统交互与调用。这些核心的功能模块集成在 node 中，可以直接使用。</p>
+<ul>
+<li><strong>http</strong>：HTTP 相关功能。</li>
+<li><strong>path</strong>：处理文件路径。</li>
+<li><strong>url</strong>：操作 URL。</li>
+<li><strong>fs</strong>：系统 io 功能。</li>
+<li><strong>child_process</strong>：进程功能。</li>
+<li><strong>util</strong>：提供了一些工具。</li>
+</ul>
+<h2 id="-">自定义模块</h2>
+<p>下面是一个最简单的模块，新建一个<code>a.js</code>文件如下：</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(i)</span> </span>{
+  <span class="hljs-built_in">console</span>.log(i);
+};
+</code></pre>
+<p>上面代码就是一个模块，它通过<code>module.exports</code>变量，对外输出一个方法。</p>
+<p>使用方法如下:</p>
+<pre><code class="lang-js"><span class="hljs-reserved">var</span> m = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./a'</span>);
+m(<span class="hljs-string">'输出'</span>);
+</code></pre>
+<h2 id="-">全局对象和全局变量</h2>
+<p>常用几个全局对象</p>
+<ul>
+<li><strong>console</strong>：这是 Node 内置的 console 模块，提供命令行环境中的输出。</li>
+<li><strong>module</strong>：该对象指向当前模块，<code>module.exports</code>属性是该模块对外的接口，被 require 方法调用。</li>
+<li><strong>exports</strong>：该对象指向 <code>module.exports</code>属性，是该属性的简写形式。exports 也不是全局变量，而是每个模块私有的。</li>
+</ul>
+<h2 id="-">全局对象和全局变量</h2>
+<p>Node 提供一些全局函数。</p>
+<ul>
+<li><strong>setTimeout()</strong>：提供简单的定时器功能。</li>
+<li><strong>clearTimeout()</strong>：用于终止一个 setTimeout 方法新建的定时器。</li>
+<li><strong>setInterval()</strong>：循环定时器。</li>
+<li><strong>clearInterval()</strong>：终止一个用 setInterval 方法新建的定时器。</li>
+<li><strong>require()</strong>：用于加载模块。</li>
+<li><strong>Buffer()</strong>：用于操作二进制数据。</li>
+</ul>
+<h2 id="-">异常处理</h2>
+<h2 id="try-catch">try-catch</h2>
+<p>最常用的捕获异常的方式，就是使用<code>try...catch</code>。但是却无法捕获异步运行的代码抛出的异常。</p>
+<pre><code class="lang-js"><span class="hljs-keyword">try</span> {
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'error'</span>);
+  }, <span class="hljs-number">16</span>);
+} <span class="hljs-keyword">catch</span>(err) {
+  <span class="hljs-built_in">console</span>.log(err);
+}
+</code></pre>
+<p>代码抛出的异常无法被 catch 代码块捕获。</p>
+<p>怎么办？</p>
+<h2 id="uncaughtexception-">uncaughtException 事件</h2>
+<p>当一个异常未被捕获，就会触发 <code>uncaughtException</code> 事件，可以对这个事件注册回调函数，从而捕获异常。</p>
+<pre><code class="lang-js">process.on(<span class="hljs-string">'uncaughtException'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err)</span> </span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'Error caught in uncaughtException event:'</span>, err);
+});
+
+<span class="hljs-keyword">try</span> {
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">"error"</span>);
+  }, <span class="hljs-number">16</span>);
+} <span class="hljs-keyword">catch</span>(err) {
+  <span class="hljs-built_in">console</span>.log(err);
+}
+</code></pre>
+<h2 id="-">引用、书籍推荐</h2>
+<ul>
+<li><a href="http://www.w3school.com.cn/js/pro_js_syntax.asp">W3school</a></li>
+<li><a href="http://lzw.me/pages/ecmascript/">EcmaScript</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN JavaScript Guide</a></li>
+<li><a href="http://book.douban.com/subject/10546125/">JavaScript 高级程序设计</a></li>
+<li><a href="http://book.douban.com/subject/3012828/">JavaScript 语言精髓与编程实践</a></li>
+</ul>
+<h2 id="thx-">THX ...</h2>
+
+</div>
+<div class="right-top" id="radios">
+  <label>invert</label>
+  <input type="checkbox" id="invert"/>
+  <label>normal</label>
+  <input type="radio" name="slide" value="true" />
+  <label>slide</label>
+  <input id="slide" type="radio" name="slide" checked value="false"/>
+</div>
+<button id="left" class="switcher" style="left: 0px;">&lsaquo;</button>
+<button id="right"   class="switcher" style="right: 0px;">&rsaquo;</button>
+<div id="copyright">Thank you for enjoy. &copy; <a href="https://github.com/xudafeng/startserver"
+target="_blank">Startserver</a> <iframe
+src="http://ghbtns.com/github-btn.html?user=xudafeng&repo=startserver&type=watch&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe></div>
+<script>
++function(global, undefined) {
+  var isSlide = document.getElementById('slide').checked;
+  var mode = document.getElementById('mode');
+  var ispdf = mode.value === 'pdf';
+  var index = location.hash.split('=')[1] || 1;
+  var left = document.getElementById('left');
+  var right = document.getElementById('right');
+  var page = document.getElementById('page');
+  var invert = document.getElementById('invert');
+  var isThumbnail = false;
+  var isInvert = false;
+  page.designMode = 'on';
+  var pages = page.children;
+  var radios = document.getElementById('radios');
+
+  function setCookie(name, value, expiresHours) {
+    var cookieString = name + '=' + escape(value);
+
+    if (expiresHours > 0) {
+      var date = new Date();
+      date.setTime( date.getTime + expiresHours * 3600 * 1000);
+      cookieString = cookieString + ';expires=' + date.toGMTString();
+    }
+    document.cookie = cookieString;
+  }
+
+  function addClass(index, name) {
+
+    if (!pages[index]) return;
+    pages[index].className += ' ' + name;
+  }
+
+  function removeClass() {
+    for (var i = 0; i < pages.length; i++) {
+      pages[i].className = 'page';
+    }
+  }
+
+  function direct(target) {
+    left.style.display = 'block';
+    right.style.display = 'block';
+    if (index == 1) left.style.display = 'none';
+    if (index == pages.length) right.style.display = 'none';
+    location.href = target || '';
+  }
+
+  function prev() {
+    if (index == 1) return;
+    index --;
+    direct('#page=' + index);
+  }
+
+  function next() {
+    if (index == pages.length) return;
+    index ++;
+    direct('#page=' + index);
+  }
+
+  function thumbnail() {
+    isThumbnail = !isThumbnail;
+    editAble(isThumbnail ? 'false' : 'true');
+    var cls = '';
+    if (isInvert) cls += ' invert';
+    if (isThumbnail) cls += ' thumbnail';
+    document.body.className = cls;
+  }
+
+  function editAble(r) {
+    page.contentEditable = r;
+  }
+
+  function slider() {
+    if (index == 0) {
+      return thumbnail();
+    };
+    removeClass();
+    addClass(index - 1, 'current');
+    setTimeout(function() {
+      addClass(index, 'next');
+      addClass(index - 2, 'prev');
+    }, 16);
+  }
+
+  var temp = '';
+  var counter = 0;
+  for (var i = 0;i < pages.length; i++) {
+    var current = pages[i];
+    var tagName = current.tagName;
+    var nextTag = pages[i + 1];
+    var nextTagName = nextTag ? nextTag.tagName : null;
+
+    if (i === 0 || tagName === 'H1' || tagName === 'H2') {
+      temp += '<article class="page"';
+      if (ispdf) {
+        temp += ' style= "transform: translate(0, ' + 100 * counter + '%);"';
+      }
+      temp += '><div class="inner">';
+      counter ++;
+    }
+    temp += current.outerHTML;
+
+    if (nextTagName === 'H1' || nextTagName === 'H2') {
+      temp += '<\/div><\/article>';
+    }
+  }
+
+  page.innerHTML = temp + '<\/div><\/article>';
+  pages = page.querySelectorAll('.page');
+
+  if (ispdf) {
+    return;
+  }
+
+  function delegate(target) {
+    return target.nodeName && target.nodeName.toLowerCase() === 'article' ? target : delegate(target.parentElement);
+  }
+
+  function getIndex(e) {
+    var p = e.parentNode;
+    var c = p.children;
+    for (var i=0; i < c.length; i++) {
+      if (c[i] == e) {
+        return i;
+      };
+    }
+  }
+  radios.addEventListener('click', function(e) {
+    if (e.target.nodeName === 'INPUT' && e.target.value === 'true') {
+      setCookie('startserver-slide', false, 240);
+      direct();
+    }
+  });
+  page.addEventListener('click', function(e) {
+    if (!isThumbnail) return;
+    var target = delegate(e.target);
+    var index = getIndex(target) + 1;
+    thumbnail();
+    direct('#page=' + index);
+  });
+  global.addEventListener('hashchange', function() {
+    index = location.hash.split('=')[1] || 1;
+    slider();
+  });
+  global.addEventListener('mousewheel', function(e) {
+    if (isThumbnail) return;
+    var target = pages[index - 1];
+    var delta = e.wheelDelta / 120;
+    target.scrollTop += delta > 0 ? -10 : 10;
+  });
+  left.addEventListener('click', function() {
+    prev();
+  });
+  right.addEventListener('click', function() {
+    next();
+  });
+  page.addEventListener('dblclick', function() {
+    if (isThumbnail) return;
+    editAble(page.contentEditable === 'true' ? 'false' : 'true');
+  });
+  invert.addEventListener('change', function(e) {
+    var target = e.target;
+    isInvert = target.checked;
+    var cls = '';
+    if (isInvert) cls += ' invert';
+    if (isThumbnail) cls += ' thumbnail';
+    document.body.className = cls;
+  });
+  document.addEventListener('keydown', function(e) {
+    switch (e.keyCode) {
+      case 39:
+      case 40:
+        e.preventDefault();
+        next();
+        break;
+      case 37:
+      case 38:
+        e.preventDefault();
+        prev();
+        break;
+      case 27:
+        e.preventDefault();
+        direct('#page=' + 0);
+        break;
+    }
+  });
+  setTimeout(function() {
+    var images = document.querySelectorAll('img');
+    for (var i = 0; i < images.length; i ++) {
+      images[i].setAttribute('style', 'width:' + images[i].width + 'px;');
+    }
+  }, 5000);
+  setTimeout(function() {
+    direct('#page=' + index);
+    document.body.style.opacity = 1;
+  }, 16);
+}(this);
+</script>
+</body>
+</html>

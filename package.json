@@ -1,0 +1,14 @@
+{
+  "name": "slide",
+  "version": "1.0.0",
+  "description": "slide",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/slide.git"
+  },
+  "devDependencies": {
+    "startserver": "*"
+  },
+  "author": "xudafeng",
+  "license": "MIT"
+}

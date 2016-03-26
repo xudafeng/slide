@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2D渲染技术 - 微分享</title>
+<meta name="description" content="好用版PPT，^-^源代码：https://github.com/xudafeng/slide" />
+<link rel="shortcut icon" href="https://i.alipayobjects.com/common/favicon/favicon.ico" type="image/x-icon" />
+<script src="app.js"></script>
+<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="pillow.css" />
+</head>
+<body>
+<section class="slide">
+  <article class="page">
+    <h1 class="mgt-100 c">2D Rendering Technology</h1>
+    <img src="images/mario.png" class="b" />
+  </article>
+  <article class="page">
+    <div class="content">
+      <a target="_blank" href="http://xudafeng.github.io/pillow/examples/puzzle/"><h1>Simple</h1></a>
+      <h2><pre>Canvas.getContext('<b class="pink">2d</b>')</pre></h2>
+      <div style="height:450px;">
+        <iframe frameborder="0" src="http://xudafeng.github.io/pillow/examples/puzzle/"></iframe>
+      </div>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <h1>Principle</h1>
+      <div class="mgt-10">
+        <h2>Render Sequence</h2>
+        <h2>push <b class="yellow">OR</b> append ?</h2>
+        <h2 class="cyan">RenderObjectModel</h2>
+<pre>
+  update()                                // for screen timer
+  context.save()                          // save context in stack
+  context.globalAlpha = alpha
+  context.translate(x, y)
+  context.rotate(rotation * Math.PI / 180)
+  context.scale(scaleX, scaleY)
+  draw()                                  // deep traversal children
+  context.restore()                       // restore context
+</pre>
+      </div>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/"
+        target="_blank"><h1>Pillow</h1></a>      
+      <div style="height:50px;">
+      <iframe frameborder="0" 
+        src="http://ghbtns.com/github-btn.html?user=xudafeng&repo=pillow&type=watch&size=large"></iframe>
+      </div>
+
+      <h2>touch the pillow,and have a lot of rest</h2>
+      <img style="margin-top:40px;box-shadow: 13px 13px 3px #111;" src="images/pillow.png"/>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/examples/mouse/"
+        target="_blank"><h1>Event Dispatch</h1></a>
+      <div class="mgt-10" style="height:600px;">
+        <iframe frameborder="0" src="http://xudafeng.github.io/pillow/examples/mouse/"></iframe>
+      </div>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/examples/android/"
+        target="_blank"><h1>Pseudo 3D</h1></a>
+      <h2>3D model</h2>
+      <h2>mobile</h2>
+      <h2>touch VS mouse</h2>
+      <img class="hover-zoom" style="position:absolute;-webkit-transform:scale(.4);" src="images/2v1.png">
+      <div class="mgt-10" style="height:300px;">
+        <iframe frameborder="0" src="http://xudafeng.github.io/pillow/examples/android/"></iframe>
+      </div>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/examples/gravity/"
+        target="_blank"><h1>Physical</h1></a>
+      <h2><a
+      href="https://github.com/xudafeng/pillow/blob/master/src/tool/Vector2d.js"
+      target="_blank">Vector2d</a></h2>
+      <div class="mgt-10"
+        style="position:absolute;left:-280px;top:30px;width:1200px;-webkit-transform:scale(0.5);height:650px;">
+        <iframe frameborder="0" src="http://xudafeng.github.io/pillow/examples/gravity/"></iframe>
+      </div>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/examples/particle/"
+        target="_blank"><h1>Particle</h1></a>
+      <div
+        style="margin-top:100px;height:350px;">
+        <iframe frameborder="0" src="http://xudafeng.github.io/pillow/examples/particle/"></iframe>
+      </div>
+    </div>
+  </article>
+
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/examples/horizontal/"
+        target="_blank"><h1>Sprite</h1></a>
+      <h2><a href="http://xudafeng.github.io/XSpriteEditor/"
+          target="_blank">XSpriteEditor</a>      <div
+          style="vertical-align:bottom;margin-bottom:-5px;display:inline-block;width:150px;height:50px;">
+      <iframe frameborder="0" 
+        src="http://ghbtns.com/github-btn.html?user=xudafeng&repo=XSpriteEditor&count=true&type=watch&size=large"></iframe>
+      </div>
+      </h2>
+      <h2>node-webkit</h2>
+      <div
+        style="position:absolute;left:-300px;top:0px;width:1200px;-webkit-transform:scale(0.4);height:850px;">
+      <iframe frameborder="0" src="http://xudafeng.github.io/pillow/examples/horizontal/"></iframe>
+      </div>
+
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/examples/flappybird/"
+        target="_blank"><h1>Need Bird?</h1></a>
+      <h2>Rending Anywhere</h2>
+      <h2>now</h2>
+        <img src="images/phone.png" height="250"/>
+        <img src="images/bird.png" height="250" / >
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="http://xudafeng.github.io/pillow/examples/flappybird/"
+        target="_blank"><h1>Need Bird?</h1></a>
+      <img class="hover-zoom"
+      style="position:absolute;-webkit-transform:scale(.4);" src="images/2v2.png">
+
+      <div
+        style="position:absolute;top:0;left:-80px;width:1200px;height:850px;-webkit-transform:scale(0.4);">
+        <iframe frameborder="0" src="http://xudafeng.github.io/pillow/examples/flappybird/"></iframe>
+      </div>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <h1>Flixel</h1>
+      <h2>actionScript</h2>
+      <h2><a href="https://github.com/xudafeng/flixel" target="_blank">haxe</a></h2>
+      <img style="margin-top:40px;box-shadow: 13px 13px 3px #111;" src="images/f.png"/>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <h1>node-canvas</h1>
+      <h2>Cairo</h2>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <a href="https://github.com/xudafeng/html2canvas"
+        target="_blank"><h1>html2canvas</h1></a>
+      <h2>Screenshots</h2>
+      <h2>For test ?</h2>
+      <img style="margin-top:20px;"
+      src="images/earth.png"/>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <h1>browserling</h1>
+      <img style="margin-top:30px;"
+      src="images/b.png" height="400"/>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <h1><a href="http://developer.baidu.com/map/custom/" target="_blank">baidu map</a></h1>
+      <h2>Javascript Domination</h2>
+      <div
+        style="position:absolute;top:80;left:30px;width:800px;height:430px;">
+        <iframe frameborder="0" src="http://developer.baidu.com/map/custom/"></iframe>
+      </div>
+
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <h1>webgl for 2d</h1>
+      <h2><a href="http://sirius2d.com/" target="_blank">sirius2d</a></h2>
+      <h2>Phaser</h2>
+      <h2>Pixi.js</h2>
+    </div>
+  </article>
+  <article class="page">
+    <div class="content">
+      <h1>mobile</h1>
+      <h2>WWDC</h2>
+      <h2>future</h2>
+            <img style="margin-top:10px;"
+      src="images/bunny.png" height="350"/>
+
+    </div>
+  </article>
+
+  <article class="page">
+    <img src="images/mario.png" class="b" />
+    <div class="content">
+      <h1 style="margin-top:200px;" class="c">END</h1>
+      <h2 style="margin-top:200px;" class="r">XDF @ Alipay<h2>
+    </div>
+  </article>
+</section>
+<div class="arrow">
+</div>
+<button id="switcher-left" class="page-switcher
+    custom-appearance" style="width: 31px; left: 0px; top: 0px; padding-bottom:
+    0px;">
+    &lsaquo;
+</button>
+<button id="switcher-right" class="page-switcher
+    custom-appearance" style="width: 78.875px; right: 0px; top: 0px;
+    padding-bottom: 0px;">
+    &rsaquo;
+</button>
+<div class="panel">
+    IP:
+    <input type="text" placeholder="ip请不要加http://" tabindex="1" id="socketIp"
+    class="input" />
+    HOST:
+    <input type="text" placeholder="请添加端口地址" tabindex="2" id="socketHost"
+    class="input" maxlength="10" />
+</div>
+<div class="tips">
+</div>
+<script src="index.js"></script>
+</body>
+</html>
