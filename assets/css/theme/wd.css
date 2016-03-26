@@ -1,0 +1,62 @@
+@import url(./white.css);
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1429589277_537646.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1429589277_537646.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1429589277_537646.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1429589277_537646.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1429589277_537646.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+[icon] {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: inherit;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0px;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+}
+
+[icon]:before {
+  display: block;
+  font-family: "iconfont"!important;
+}
+
+[icon="practice"]:before  { content: "\e600"; }
+[icon="artical"]:before   { content: "\e601"; }
+[icon="img"]:before       { content: "\e602"; }
+[icon="break"]:before     { content: "\e603"; }
+[icon="break2"]:before    { content: "\e604"; }
+[icon="correct"]:before   { content: "\e605"; }
+[icon="wrong"]:before     { content: "\e606"; }
+[icon="forbbiden"]:before { content: "\e607"; }
+[icon="warning"]:before   { content: "\e608"; }
+[icon="question"]:before  { content: "\e609"; }
+[icon="lock"]:before      { content: "\e60a"; }
+[icon="tip"]:before       { content: "\e60b"; }
+[icon="sample"]:before    { content: "\e60c"; }
+[icon="html"]:before      { content: "\e60d"; }
+[icon="css"]:before       { content: "\e60e"; }
+
+.reveal code,
+.reveal pre {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.reveal a[show]:before {
+  font-family: "iconfont"!important;
+  content: "\e60c";
+  padding-right: 15px;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  text-transform: none; }
+
