@@ -1,15 +1,43 @@
-## 端在变革
+# 移动带来的挑战
 
 - WEB 演进越来越快
-- 云的出现让端更清晰
+- 版本分化频繁
+- 场景越来越多且愈发复杂
+
+- - -
+
+# 端在变革
+
+- 云的边界更加清晰
+- 更多元的设备
+- 混合式的技术选型
 - 既要迎合技术栈的更新频率，又要迎合市场
 
 - - -
 
-## 移动带来非常多的挑战
+# Why Automated Testing
 
-- 更敏捷
-- 更自动化
+- - -
+
+- 测试方案和手段被透明化
+- 可归档、复用、更好的组织起来
+
+- - -
+
+![](http://ww4.sinaimg.cn/mw1024/6d308bd9gw1etym6axay9j20fj0a2t8u.jpg)
+
+## 更直接的收效
+
+- - -
+
+## 专项测试的驱动器
+
+- 耐久性测试
+- 性能基准测试
+
+<!--
+人工无法完成的工作
+-->
 
 - - -
 
@@ -51,20 +79,7 @@
 
 - - -
 
-![](http://ww4.sinaimg.cn/mw1024/6d308bd9gw1etym6axay9j20fj0a2t8u.jpg)
-
-## 更直接的收效
-
-- 耐久性测试
-- 性能基准测试
-
-<!--
-人工无法完成的工作
--->
-
-- - -
-
-## 我们还需要解决什么问题？
+## 还要解决什么问题？
 
 - - -
 
@@ -98,7 +113,7 @@ webkit ios 强制、 android 动态载入
 
 - - -
 
-# macaca-driver
+# Macaca Theory
 
 - [WebDriver Wire Protocol](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [Selenium](https://github.com/SeleniumHQ/selenium)
@@ -136,22 +151,26 @@ webkit ios 强制、 android 动态载入
 
 - - -
 
+![sample](https://os.alipayobjects.com/rmsportal/AupRcQdJrzTdOnd.gif)
+
+- - -
+
 # Then?
 
 - - -
 
-# Continuous integration
+# Continuous Integration
 
-![master-slave](http://ww4.sinaimg.cn/mw1024/6d308bd9gw1etiu13q4syj20m80hnmyb.jpg)
+![master-slave](http://ww4.sinaimg.cn/large/6d308bd9gw1f2q8yjd3jzj20t80m10ud.jpg)
 
 - - -
 
-## 优秀的ci系统
+## 优秀的CI系统
 
-- GitLab-ci
+- GitLab-CI
 - Jenkins
 - Gerrit
-- travis-ci
+- Travis-CI
 
 - - -
 
@@ -161,10 +180,11 @@ webkit ios 强制、 android 动态载入
 - 节点管理
 - WEB平台集成
 - 沉淀数据、报表
+- Docker D
 
 - - -
 
-![macaca-master](http://ww3.sinaimg.cn/mw1024/6d308bd9gw1etxn07kouej20lo0irmyy.jpg)
+![macaca-master](http://ww4.sinaimg.cn/large/6d308bd9gw1f1xw9hnl45j21kw16cnlb.jpg)
 
 - - -
 
@@ -175,16 +195,27 @@ webkit ios 强制、 android 动态载入
 
 - - -
 
-![task-manager](http://ww3.sinaimg.cn/mw1024/6d308bd9gw1etxpqi85i2j20kr0fl0uu.jpg)
+![task-manager](http://ww2.sinaimg.cn/large/6d308bd9gw1f24xtghjf1j21k4148wp7.jpg)
 
 - - -
 
 # macaca-slave
 
-- tcp通信
 - 配置管理
 - 测试框架集成
 - slave条件负载
+
+- - -
+
+![reliable-1](http://ww1.sinaimg.cn/large/6d308bd9gw1f1ygp19gllj20xl0oldna.jpg)
+
+- - -
+
+![reliable-2](http://ww3.sinaimg.cn/large/6d308bd9gw1f1ygp26ocej20wr0j2tcz.jpg)
+
+- - -
+
+![reliable-3](http://ww4.sinaimg.cn/large/6d308bd9gw1f1yr1jy4ohj20qj0jzgn4.jpg)
 
 - - -
 
@@ -194,9 +225,32 @@ webkit ios 强制、 android 动态载入
 
 - - -
 
+# Macaca Enables Us
+
+- - -
+
+# PAAS
+
+- - -
+
+![arch](http://ww4.sinaimg.cn/large/6d308bd9gw1f2q881ezrrj20qz0ek0up.jpg)
+
+- - -
+
 # Open Source?
 
-- [Github/Macaca](https://github.com/macacajs)
-- Testerhome.com
-- Cnodejs.org
+[alibaba/macaca](https://github.com/alibaba/macaca)
 
+- - -
+
+<img src="http://ww4.sinaimg.cn/mw690/6d308bd9gw1f1yoo1fr2xj20nc0iqq3p.jpg" width="200" />
+
+![get the latest](http://ww2.sinaimg.cn/large/6d308bd9gw1f2qa140f85j20go0ao3yt.jpg)
+
+- - -
+
+![upup](http://ww4.sinaimg.cn/large/6d308bd9jw1f2lw0aduawj20nm08rmyy.jpg)
+
+### [Macaca Site](https://macacajs.github.io/macaca)
+
+[Testerhome.com](https://testerhome.com/topics/node31), Cnodejs.org
