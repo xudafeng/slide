@@ -11,3 +11,7 @@
 [Testing Support Library](http://developer.android.com/intl/zh-cn/tools/testing-support-library/index.html)
 
 `/android-sdks/extras/android/m2repository/com/android/support/test`
+
+Macaca
+
+uiautomator
