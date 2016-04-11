@@ -105,6 +105,21 @@ webkit ios 强制、 android 动态载入
 
 - - -
 
+### 降低自动化的成本
+
+- 收敛覆盖
+- 趋于底层
+- 数据剥离
+- 环境自动化
+
+- - -
+
+### 辅助收效
+
+- pic diff
+
+- - -
+
 ![closed loop](http://ww3.sinaimg.cn/mw1024/6d308bd9gw1etxqcy1riij20kz0ifdgw.jpg)
 
 - - -
