@@ -54,6 +54,3 @@ resolve `.class`
 
 [SwiftAndroid](https://github.com/SwiftAndroid)
 
-- - -
-
-
