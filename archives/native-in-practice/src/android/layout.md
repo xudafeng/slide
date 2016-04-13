@@ -20,9 +20,7 @@ android:orientation="horizontal"
 
 - - -
 
-## AbsoluteLayout（绝对布局）
-
-坐标绝对布局
+## GridLayout（网格布局）
 
 - - -
 
