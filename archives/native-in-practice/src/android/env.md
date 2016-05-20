@@ -37,3 +37,33 @@ von Neumann architecture
 - ant
 - gradle
 - mvn
+
+- - -
+
+## ARM
+
+[microarchitectures](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures)
+
+- - -
+
+## ABI
+
+**Application Binary Interface**
+
+> armeabi，armeabi-v7a，x86，mips，arm64-v8a，mips64，x86_64
+
+- - -
+
+## NDK
+
+**Native Development Kit**
+
+> A set of tools that allow you to leverage C and C++ code in your Android apps
+
+- - -
+
+## JAR
+
+- - -
+
+## so

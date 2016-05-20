@@ -44,15 +44,6 @@ resolve `.class`
 
 - - -
 
-### JDK & JRE
-
-- - -
-
-### JAR
-
-- - -
-
 ## Swift?
 
 [SwiftAndroid](https://github.com/SwiftAndroid)
-
