@@ -67,3 +67,24 @@ von Neumann architecture
 - - -
 
 ## so
+
+- - -
+
+## Remote dependencies
+
+Add the following line to your build.gradle file:
+
+```
+dependencies {
+    compile 'com.facebook.fresco:fresco:0.10.0'
+}
+```
+
+```
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+```
