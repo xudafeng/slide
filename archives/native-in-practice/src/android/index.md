@@ -5,3 +5,5 @@ Android篇
 - [Android-基本组成](#inner)
 - [Android-应用布局](#inner)
 - [Android-网络编程](#inner)
+- [Android-设计模式](#inner)
+- [Android-测试](#inner)
