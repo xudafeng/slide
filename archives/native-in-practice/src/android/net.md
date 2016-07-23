@@ -2,12 +2,51 @@
 
 - - -
 
-### android.webkit.WebView
+## 线程
+
+UI主线程和工作线程
+
+- - -
+
+## Socket
+
+```java
+new Socket(ip, port);
+
+Socket.getOutputStream();
+
+Socket.getInputStream();
+
+```
+
+- - -
+
+## Make HTTP
+
+- HttpURLConnection
+- DefaultHttpClient
+- WebView
+
+- - -
+
+## android.webkit.WebView
 
 - addJavascriptInterface
 - [WebViewJsBridge](https://github.com/xudafeng/WebViewJsBridge)
 - onPageFinished
 - shouldOverrideUrlLoading
+
+- - -
+
+## [feedit_android sample](https://github.com/feedit/feedit_android)
+
+- - -
+
+## 线程使用原则
+
+- 网络操作使用非UI线程（工作线程），主线程会阻塞，导致无响应
+- 工作线程不允许操作UI元素
+- 操作UI元素的API都是线程不安全的，只能在一个线程中调用以保证线程安全
 
 - - -
 
@@ -23,7 +62,7 @@ webView.loadUrl("javascript:alert(injectedObject.toString())");
 
 - - -
 
-### Android Manifest file:
+## Android Manifest file:
 
 ```
 <uses-permission android:name="android.permission.INTERNET" />
@@ -32,7 +71,11 @@ webView.loadUrl("javascript:alert(injectedObject.toString())");
 
 - - -
 
-### Cookie
+## Android Cookie
+
+- - -
+
+## Android Session
 
 - - -
 

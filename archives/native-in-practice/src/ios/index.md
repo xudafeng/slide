@@ -7,5 +7,7 @@ iOS篇
 - [iOS-应用布局](#inner)
 - [iOS-网络编程](#inner)
 - [iOS-事件手势动画](#inner)
+- [iOS-数据存储](#inner)
+- [iOS-内存管理](#inner)
 - [iOS-设计模式](#inner)
 - [iOS-测试](#inner)

@@ -4,7 +4,7 @@
 - 子视图遮盖了父视图内容
 - 同级后面的视图遮盖前面视图
 - 事件层层透传直到应用对象
-- GPU渲染的Tile-Based机制
+- GPU 渲染 Tile-Based 机制
 
 - - -
 
@@ -16,18 +16,18 @@
 
 - - -
 
-## OS X VS iOS
+## OSX(MacOS) vs iOS
 
-- iOS应用程序只有一个窗口
-- iOS通常不设关闭框，淡化常规窗口操作
-- NSWindow的父类是NSResponder， UIWindow的父类是UIView
-- iOS通常默认是满屏
-- iOS不应创建额外的窗口
+- iOS 应用程序只有一个窗口
+- iOS 通常不设关闭框，淡化常规窗口操作
+- NSWindow 的父类是 NSResponder， UIWindow 的父类是 UIView
+- iOS 通常默认是满屏
+- iOS 不应创建额外的窗口
 
 - - -
 
-- UIView包含了一个CALayer
-- CALayer属于QuartzCore库
+- UIView 包含了一个 CALayer
+- CALayer 基于 QuartzCore 库
 
 - - -
 
@@ -60,6 +60,30 @@
 
 - - -
 
+```objc
+- [ViewController initWithNibName:bundle:];
+- [ViewController init];
+- [ViewController loadView];
+- [ViewController viewDidLoad];
+- [ViewController viewWillDisappear:];
+- [ViewController viewWillAppear:];
+- [ViewController viewDidAppear:];
+- [ViewController viewDidDisappear:];
+```
+
+- - -
+
+## Navigation Stack
+
+- pushViewController
+- pushViewController
+- popViewController
+- popToViewController
+- popToRootViewController
+- ...
+
+- - -
+
 ![](http://ww4.sinaimg.cn/large/6d308bd9gw1f299zjc2p9j20pp0ocack.jpg)
 
 - - -
@@ -72,6 +96,9 @@
 
 - 尽所能使用属性方法改变视图，而非定制新视图
 - 滚动会导致数个视图在短时间内更新
+- 控制内存用量，例如 UITableViewCell 复用
+
+[iscanner_ios](https://github.com/iscanner/iscanner_ios)
 
 - - -
 

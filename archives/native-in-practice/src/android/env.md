@@ -2,6 +2,12 @@
 
 - - -
 
+## 开发环境介绍
+
+- [上手示例](https://github.com/xudafeng/android-app-bootstrap)
+
+- - -
+
 ## SDK Manager
 
 - 正式版
@@ -15,6 +21,13 @@
 ## ADB
 
 - [macaca-adb](https://github.com/macacajs/macaca-adb)
+
+- - -
+
+```shell
+# install uninstall pull push shell
+$ adb logcat -s TAG
+```
 
 - - -
 
@@ -32,11 +45,26 @@ von Neumann architecture
 
 - - -
 
-## Tools
+```shell
+$ android list avd
+$ emulator -avd $name
+```
 
-- ant
+- - -
+
+## DDMS
+
+```shell
+$ ddms
+```
+
+- - -
+
+## CM Tools
+
+- ant, [ant-lite](https://github.com/xudafeng/ant-lite)
 - gradle
-- mvn
+- maven
 
 - - -
 
@@ -62,11 +90,23 @@ von Neumann architecture
 
 - - -
 
-## JAR
+## JNI
+
+Java Native Interface
 
 - - -
 
-## so
+## *.jar
+
+- - -
+
+## *.arr
+
+包括资源文件
+
+- - -
+
+## *.so
 
 - - -
 
@@ -88,3 +128,7 @@ allprojects {
     }
 }
 ```
+
+- - -
+
+## [AndFix](https://github.com/alibaba/AndFix)

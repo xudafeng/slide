@@ -396,6 +396,6 @@ extension Singer: SongDelegate {
 
 - - -
 
-### Swift和C的交互
+### Swift 和 C 的交互
 
-- C中有指针，Swift中没有
+- C 中有指针，Swift 中没有

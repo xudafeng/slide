@@ -8,6 +8,23 @@
 
 - - -
 
+## Make HTTP requests
+
+- NSURL
+- NSURLRequest
+- NSURLConnection
+- [AFNetworking](https://github.com/AFNetworking/AFNetworking)
+
+- - -
+
+## [SDWebImage](https://github.com/rs/SDWebImage)
+
+- 缓存，性能
+- 支持GIF，WebP
+- 不要在主线程请求网络数据
+
+- - -
+
 ## Webview
 
 - [swifty-webview](https://github.com/xudafeng/swifty-webview)

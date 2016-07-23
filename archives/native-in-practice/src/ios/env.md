@@ -2,12 +2,12 @@
 
 - - -
 
-开发环境介绍
+## 开发环境介绍
 
-- xcode介绍
+- Xcode 介绍
 - 使用模拟器
 - [iOS Developer Library](https://developer.apple.com/library/ios)
-- [上手示例](https://github.com/xudafeng/hybrid_sample_ios)
+- [上手示例](https://github.com/xudafeng/ios-app-bootstrap)
 
 - - -
 
@@ -92,4 +92,8 @@ $ brew install carthage
 $ carthage update --platform iOS --verbose
 ```
 
-[sample|Logger.swift](https://github.com/xudafeng/Logger.swift)
+- - -
+
+## Framework
+
+[Logger.swift sample](https://github.com/xudafeng/Logger.swift)

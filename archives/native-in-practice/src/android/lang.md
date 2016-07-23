@@ -20,7 +20,7 @@ Since Oracle acquired Sun in 2010
 
 - - -
 
-[java_inheritance](https://xudafeng.github.io/java_inheritance)
+## [java inheritance](https://xudafeng.github.io/java_inheritance)
 
 - - -
 
