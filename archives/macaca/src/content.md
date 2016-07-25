@@ -1,26 +1,20 @@
-# 移动带来的挑战
-
-- WEB 演进越来越快
-- 版本分化频繁
-- 场景越来越多且愈发复杂
-
-- - -
-
-# 端在变革
-
-- 云的边界更加清晰
-- 更多元的设备
-- 混合式的技术选型
-- 既要迎合技术栈的更新频率，又要迎合市场
-
-- - -
-
 # Why Automated Testing
 
 - - -
 
+![](http://ww1.sinaimg.cn/large/6d308bd9gw1f6wvexvi63j20mi0erwhe.jpg)
+
+- - -
+
+- 移动WEB演进越来越快
+- 版本分化越来越频繁
+- 混合式的技术选型
+- 场景越来越多且愈发复杂
+
+- - -
+
 - 测试方案和手段被透明化
-- 可归档、复用、更好的组织起来
+- 可归档、复用、易重新组织
 
 - - -
 
@@ -30,22 +24,10 @@
 
 - - -
 
-## 专项测试的驱动器
+## 性能专项的驱动器
 
 - 耐久性测试
 - 性能基准测试
-
-<!--
-人工无法完成的工作
--->
-
-- - -
-
-[![startserver](http://ww2.sinaimg.cn/mw1024/6d308bd9gw1ethi9lx1k2j205k05kt8o.jpg)](https://github.com/xudafeng/startserver)
-
-# 尽快“自动化”起来！
-
-写个静态服务器搞定。。。
 
 - - -
 
@@ -65,9 +47,7 @@
 
 - - -
 
-- 数据环境不满足
-- 环境因素导致的上下文差异
-- 代码侵入 APP
+<div style="font-size: 10em;color: red;">×</div>
 
 - - -
 
@@ -75,48 +55,17 @@
 
 - - -
 
-![](http://ww3.sinaimg.cn/mw1024/6d308bd9gw1etpjszhnpij21670m44dz.jpg)
-
-- - -
-
-## 还要解决什么问题？
-
-- - -
-
-### 版本差异 pic#1
-
-- 操作系统版本不统一
-- 多个 SDK 版本共存
-- 软件包、WEB 容器多版本
-<!--
-webkit ios 强制、 android 动态载入
-容器带来的诡异问题、ajax 基础功能
--->
-- APP 自身的版本
-
-- - -
-
 ### 环境和配置差异
 
 - 多套部署环境
-<!--
-依赖数据库部署
--->
 
 - - -
 
-### 降低自动化的成本
+### 需要考虑成本
 
 - 收敛覆盖
-- 趋于底层
 - 数据剥离
 - 环境自动化
-
-- - -
-
-### 辅助收效
-
-- pic diff
 
 - - -
 
@@ -130,83 +79,44 @@ webkit ios 强制、 android 动态载入
 
 # Macaca Theory
 
-- [WebDriver Wire Protocol](https://w3c.github.io/webdriver/webdriver-spec.html)
-- [Selenium](https://github.com/SeleniumHQ/selenium)
+- [W3C WebDriver Wire Protocol](https://w3c.github.io/webdriver/webdriver-spec.html)
+- Node.js 成为首要技术选型
 
 - - -
-
-# Nodejs 成为首要技术选型
-
-- 跨平台的 WEB 实时应用首选
-- 事件驱动与非阻塞 I/O 模型使其轻量、高效
-- 繁荣和极速膨胀的生态 [NPM](https://www.npmjs.org/)
-
-- - -
-
-### 使用者端
-
-- 本地命令行工具
-- WEB 操作平台
-
-- - -
-
-# macaca-client
 
 - 一体化的测试体验
 - 可定制化和可扩展的 API
-- 0配置
 
 - - -
 
-![macaca-client](http://ww1.sinaimg.cn/mw1024/6d308bd9gw1etit90ka86j20m80gc0uf.jpg)
+## Device Proxy Layer
 
 - - -
 
-[anchor#2] movie
-
-- - -
-
-![sample](https://os.alipayobjects.com/rmsportal/AupRcQdJrzTdOnd.gif)
-
-- - -
-
-# Then?
+![](http://ww4.sinaimg.cn/large/6d308bd9gw1f6wvvncacij20t60qgwgy.jpg)
 
 - - -
 
 # Continuous Integration
 
-![master-slave](http://ww4.sinaimg.cn/large/6d308bd9gw1f2q8yjd3jzj20t80m10ud.jpg)
-
 - - -
 
-## 优秀的CI系统
-
-- GitLab-CI
-- Jenkins
-- Gerrit
-- Travis-CI
+![master-slave](http://ww2.sinaimg.cn/large/6d308bd9jw1f6yc2z78wcj20i70famy5.jpg)
 
 - - -
 
 # macaca-master
 
-- 并发任务
-- 节点管理
-- WEB平台集成
-- 沉淀数据、报表
-- Docker D
+- - -
+
+- 实现进程控制
+- 处理数据存档，沉淀数据、报表
+- 实现任务调度，调度策略
+- Docker 一键部署
 
 - - -
 
 ![macaca-master](http://ww4.sinaimg.cn/large/6d308bd9gw1f1xw9hnl45j21kw16cnlb.jpg)
-
-- - -
-
-- 实现进程控制
-- 处理数据存档
-- 实现任务调度
-- 调度策略
 
 - - -
 
@@ -216,15 +126,48 @@ webkit ios 强制、 android 动态载入
 
 # macaca-slave
 
+- - -
+
 - 配置管理
 - 测试框架集成
-- slave条件负载
+- 条件负载
 
 - - -
 
-# Unattended Execution
+# Performance
 
-![](http://ww4.sinaimg.cn/mw1024/6d308bd9gw1etylmslyvdj20k907hjsg.jpg)
+- - -
+
+![](http://ww1.sinaimg.cn/large/6d308bd9gw1f6wvijr24gj20xk0ogaev.jpg)
+
+- - -
+
+![](http://ww4.sinaimg.cn/large/6d308bd9gw1f6xkv3gcnqj20gr09sq3j.jpg)
+
+
+- - -
+
+## Native Performance
+
+- - -
+
+![](http://ww2.sinaimg.cn/large/6d308bd9gw1f6xqdd16wtj20m209zt9r.jpg)
+
+- - -
+
+## WEB Performance
+
+- - -
+
+![](http://ww3.sinaimg.cn/large/6d308bd9gw1f6xqdbm364j213c0mmwso.jpg)
+
+- - -
+
+![](http://ww1.sinaimg.cn/large/6d308bd9gw1f6wvik4fdvj215o0hwjwc.jpg)
+
+- - -
+
+![](http://ww2.sinaimg.cn/large/6d308bd9gw1f6wvikfltvj210z0pe41s.jpg)
 
 - - -
 
@@ -232,28 +175,80 @@ webkit ios 强制、 android 动态载入
 
 - - -
 
-# PAAS
+![](http://ww3.sinaimg.cn/large/6d308bd9gw1f6wvnasr6vg20ze0iwdv6.gif)
 
 - - -
 
-![arch](http://ww4.sinaimg.cn/large/6d308bd9gw1f2q881ezrrj20qz0ek0up.jpg)
+# [Hilo](//github.com/hiloteam/Hilo)
+
+> Hilo is a Cross-end HTML5 Game development solution developed by Alibaba Group. It could help developers build HTML5 games conveniently in minutes.
 
 - - -
 
-# Open Source?
+![](http://ww1.sinaimg.cn/large/6d308bd9gw1f6wst3v45gj20jh0hgn2q.jpg)
+
+- - -
+
+![](http://ww1.sinaimg.cn/large/6d308bd9gw1f6wsibnfldg20nk0gr7kg.gif)
+
+- - -
+
+![](http://ww3.sinaimg.cn/large/6d308bd9gw1f6wsic5dmxj20rl0qqtbi.jpg)
+
+- - -
+
+# Multi-lang
+
+- - -
+
+![](http://ww3.sinaimg.cn/large/6d308bd9gw1f6w2m4drpcj20m80fnt9x.jpg)
+
+- - -
+
+# Full Browser Stack
+
+- - -
+
+![](http://ww4.sinaimg.cn/large/6d308bd9gw1f35rq6bpq9j20kq0cbwfj.jpg)
+
+- - -
+
+# Inspector
+
+- - -
+
+![](http://ww4.sinaimg.cn/large/6d308bd9gw1f6jev6p7eog20uo0k0npk.gif)
+
+- - -
+
+![](http://ww2.sinaimg.cn/large/6d308bd9gw1f6jevlycr4g20uo0k0u13.gif)
+
+- - -
+
+# Multi Driver
+
+- - -
+
+## chat with robot ...
+
+- - -
+
+![](http://ww4.sinaimg.cn/large/6d308bd9gw1f5mo6wfwweg20i20gfnpo.gif)
+
+- - -
+
+# Open Source
 
 [alibaba/macaca](https://github.com/alibaba/macaca)
 
 - - -
 
-<img src="http://ww4.sinaimg.cn/mw690/6d308bd9gw1f1yoo1fr2xj20nc0iqq3p.jpg" width="200" />
+# Ecosystem
 
-![get the latest](http://ww2.sinaimg.cn/large/6d308bd9gw1f2qa140f85j20go0ao3yt.jpg)
+- [Macaca Site](https://macacajs.github.io/macaca)
+- [Testerhome.com](https://testerhome.com/topics/node68)
+- Cnodejs.org
 
 - - -
 
-![upup](http://ww4.sinaimg.cn/large/6d308bd9jw1f2lw0aduawj20nm08rmyy.jpg)
-
-### [Macaca Site](https://macacajs.github.io/macaca)
-
-[Testerhome.com](https://testerhome.com/topics/node68), Cnodejs.org
+# THANK YOU

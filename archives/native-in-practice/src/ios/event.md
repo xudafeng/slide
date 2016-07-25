@@ -2,7 +2,7 @@
 
 - - -
 
-![](http://ww1.sinaimg.cn/large/6d308bd9gw1f27tfzru0vj212k0nxtbg.jpg)
+<img data-src="http://ww1.sinaimg.cn/large/6d308bd9gw1f27tfzru0vj212k0nxtbg.jpg" />
 
 - - -
 
@@ -16,4 +16,4 @@ Responder Chain
 
 - - -
 
-![](http://ww4.sinaimg.cn/large/6d308bd9gw1f27tg2cfjmj213l0lhn1d.jpg)
+<img data-src="http://ww4.sinaimg.cn/large/6d308bd9gw1f27tg2cfjmj213l0lhn1d.jpg" />

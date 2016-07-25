@@ -27,13 +27,13 @@ let applicationDidEnterBackgroundObserver = notificationCenter.addObserverForNam
 
 ### MVC
 
-![mvc-origin](http://ww1.sinaimg.cn/large/6d308bd9gw1f2exfi380qj21080ezta0.jpg)
+<img data-src="http://ww1.sinaimg.cn/large/6d308bd9gw1f2exfi380qj21080ezta0.jpg" />
 
 - - -
 
 ### Strong Coupling
 
-![in-fact](http://ww1.sinaimg.cn/large/6d308bd9gw1f2exhz1nggj20vy0a8t9u.jpg)
+<img data-src="http://ww1.sinaimg.cn/large/6d308bd9gw1f2exhz1nggj20vy0a8t9u.jpg" />
 
 - - -
 
@@ -45,7 +45,7 @@ let applicationDidEnterBackgroundObserver = notificationCenter.addObserverForNam
 
 Presenter（Supervising Controller）
 
-![MVP](http://ww4.sinaimg.cn/large/6d308bd9gw1f2exst25woj20o809agmg.jpg)
+<img data-src="http://ww4.sinaimg.cn/large/6d308bd9gw1f2exst25woj20o809agmg.jpg" />
 
 - - -
 
@@ -59,7 +59,7 @@ View and Model has on Coupling
 
 ## MVVM
 
-![MVVM](http://ww1.sinaimg.cn/large/6d308bd9gw1f2exv8kiygj212u0bsq4m.jpg)
+<img data-src="http://ww1.sinaimg.cn/large/6d308bd9gw1f2exv8kiygj212u0bsq4m.jpg" />
 
 - - -
 
@@ -79,15 +79,15 @@ Key-Value Observing
 
 - - -
 
-![VIPER](http://ww4.sinaimg.cn/large/6d308bd9gw1f2eyala5tyj218e0jm0ve.jpg)
+<img data-src="http://ww4.sinaimg.cn/large/6d308bd9gw1f2eyala5tyj218e0jm0ve.jpg" />
 
 - - -
 
-![](http://ww2.sinaimg.cn/large/6d308bd9gw1f2eze2qtoij20l00b7mys.jpg)
+<img data-src="http://ww2.sinaimg.cn/large/6d308bd9gw1f2eze2qtoij20l00b7mys.jpg" />
 
 - - -
 
-![agenda](http://ww4.sinaimg.cn/large/6d308bd9gw1f2eyk4j2fsj21300c4t9z.jpg)
+<img data-src="http://ww4.sinaimg.cn/large/6d308bd9gw1f2eyk4j2fsj21300c4t9z.jpg" />
 
 - - -
 
@@ -102,7 +102,7 @@ objc.io/issues#13
 
 [issue-13-viper](https://github.com/objcio/issue-13-viper)
 
-![TODO](http://ww2.sinaimg.cn/large/6d308bd9gw1f2eyk4sphej20hs0vkwgj.jpg)
+<img data-src="http://ww2.sinaimg.cn/large/6d308bd9gw1f2eyk4sphej20hs0vkwgj.jpg" />
 
 - - -
 

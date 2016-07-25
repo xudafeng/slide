@@ -1,11 +1,6 @@
-*.swp
-*.swo
-*.swn
-*.swl
-*.swm
-.sw*
 .DS_Store
 node_modules
 npm-debug.log
 .idea/*
 *.un~
+*.sw*

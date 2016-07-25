@@ -12,7 +12,7 @@
 
 - - -
 
-![activity_lifecycle](http://ww1.sinaimg.cn/large/6d308bd9gw1f2trxa98cmj20e90ifdhn.jpg)
+<img data-src="http://ww1.sinaimg.cn/large/6d308bd9gw1f2trxa98cmj20e90ifdhn.jpg" />
 
 - - -
 
@@ -25,7 +25,7 @@
 
 - - -
 
-![](http://ww2.sinaimg.cn/large/6d308bd9gw1f51kzbxghgj20ie087gml.jpg)
+<img data-src="http://ww2.sinaimg.cn/large/6d308bd9gw1f51kzbxghgj20ie087gml.jpg" />
 
 - - -
 
@@ -40,7 +40,7 @@
 
 - - -
 
-![restore_instance](http://ww3.sinaimg.cn/large/6d308bd9gw1f2ts2lkdexj20h509qdhj.jpg)
+<img data-src="http://ww3.sinaimg.cn/large/6d308bd9gw1f2ts2lkdexj20h509qdhj.jpg" />
 
 - - -
 
@@ -61,7 +61,7 @@
 
 - - -
 
-![service_lifecycle](http://ww4.sinaimg.cn/large/6d308bd9gw1f2trqcb9ujj20at0e3tan.jpg)
+<img data-src="http://ww4.sinaimg.cn/large/6d308bd9gw1f2trqcb9ujj20at0e3tan.jpg" />
 
 - - -
 

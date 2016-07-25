@@ -11,11 +11,11 @@
 
 ## UIKit类继承
 
-<img src="http://ww2.sinaimg.cn/large/6d308bd9gw1f0dd4fk51ij20o90w742q.jpg" width="600" />
+<img data-src="http://ww2.sinaimg.cn/large/6d308bd9gw1f0dd4fk51ij20o90w742q.jpg" width="600" />
 
 - - -
 
-<img src="http://ww2.sinaimg.cn/large/6d308bd9gw1f0c1u7y1tbj21eq12ctt0.jpg" width="600" />
+<img data-src="http://ww2.sinaimg.cn/large/6d308bd9gw1f0c1u7y1tbj21eq12ctt0.jpg" width="600" />
 
 [Objc Inheritance](http://xudafeng.github.io/objc_inheritance/tree.html)
 

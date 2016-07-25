@@ -136,30 +136,6 @@ it('render container style', function() {
 
 - - -
 
-# Why Automated
-
-- - -
-
-![](https://os.alipayobjects.com/rmsportal/AupRcQdJrzTdOnd.gif)
-
-[more sample](http://macacajs.github.io/macaca/guide.html#/getting-started)
-
-- - -
-
-# Macaca Enables Us
-
-![](http://ww4.sinaimg.cn/large/6d308bd9gw1f35rq6bpq9j20kq0cbwfj.jpg)
-
-- - -
-
-# PAAS
-
-- - -
-
-![arch](http://ww4.sinaimg.cn/large/6d308bd9gw1f2q881ezrrj20qz0ek0up.jpg)
-
-- - -
-
 <img src="http://ww4.sinaimg.cn/mw690/6d308bd9gw1f1yoo1fr2xj20nc0iqq3p.jpg" width="200" />
 
 # Open Source
@@ -167,8 +143,6 @@ it('render container style', function() {
 [alibaba/macaca](https://github.com/alibaba/macaca)
 
 - - -
-
-![get the latest](http://ww2.sinaimg.cn/large/6d308bd9gw1f2qa140f85j20go0ao3yt.jpg)
 
 ### [Macaca Site](https://macacajs.github.io/macaca)
 
