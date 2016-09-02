@@ -16,12 +16,14 @@
 <![endif]-->
 <!-- Printing and PDF exports -->
 <script>
-  var link = document.createElement( 'link' );
+  var link = document.createElement('link');
   link.rel = 'stylesheet';
   link.type = 'text/css';
-  link.href = window.location.search.match( /print-pdf/gi ) ? '../../assets/css/print/pdf.css' : '../../assets/css/print/paper.css';
-  document.getElementsByTagName( 'head' )[0].appendChild( link );
-  if (window.location.search.match(/print-pdf/gi)) {window.print();}
+  link.href = window.location.search.match(/print-pdf/gi) ? '../../assets/css/print/pdf.css' : '../../assets/css/print/paper.css';
+  document.getElementsByTagName('head')[0].appendChild(link);
+  if (window.location.search.match(/print-pdf/gi)) {
+    window.print();
+  }
 </script>
 <base target="_blank"/>
 </head>

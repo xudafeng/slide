@@ -130,24 +130,4 @@ it('render container style', function() {
 
 - - -
 
-# Testability
-
-- [patterns](https://github.com/xudafeng/ios-app-bootstrap/tree/master/ios-app-bootstrap/patterns)
-
-- - -
-
-<img src="http://ww4.sinaimg.cn/mw690/6d308bd9gw1f1yoo1fr2xj20nc0iqq3p.jpg" width="200" />
-
-# Open Source
-
-[alibaba/macaca](https://github.com/alibaba/macaca)
-
-- - -
-
-### [Macaca Site](https://macacajs.github.io/macaca)
-
-[Testerhome.com](https://testerhome.com/topics/node68), Cnodejs.org
-
-- - -
-
 # END
