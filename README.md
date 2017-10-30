@@ -1,3 +1,3 @@
 # slide
 
-[link](http://xudafeng.github.io/slide)
+[link](//xudafeng.github.io/slide)
