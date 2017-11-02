@@ -65,7 +65,7 @@ inject [testsuit](https://github.com/startserver/startserver-testsuit)
 
 # Macaca Theory
 
-- [W3C WebDriver Wire Protocol](https://w3c.github.io/webdriver/webdriver-spec.html)
+- [W3C WebDriver Wire Protocol](//w3c.github.io/webdriver/webdriver-spec.html)
 - Based on Node.js
 
 - - -
@@ -238,7 +238,7 @@ chat with robot ...
 
 # Open Source
 
-- [macacajs.github.io](https://macacajs.github.io/macaca)
+- [macacajs.github.io](https://macacajs.github.io)
 - [github.com/alibaba/macaca](https://github.com/alibaba/macaca)
 
 - - -
