@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Data Visualization</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+<link rel="stylesheet" href="../../assets/css/reveal.css">
+<link rel="stylesheet" href="../../assets/css/theme/wd.css">
+<link rel="stylesheet" href="../../assets/lib/css/railscasts.css">
+<link rel="stylesheet" href="../../assets/css/custom.css">
+<!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+<!-- Printing and PDF exports -->
+<script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? '../../assets/css/print/pdf.css' : '../../assets/css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+  if (window.location.search.match(/print-pdf/gi)) {window.print();}
+</script>
+<style>
+.slides iframe {
+  width: 80%;
+  height: 650px;
+}
+.slides img {
+  width: 80%;
+}
+</style>
+<base target="_blank"/>
+</head>
+<body>
+<div class="ribbon" style="position:fixed;right:0;top:0;width:150px;height:150px;overflow:hidden;z-index:9999;"><a target="_blank" style="display:inline-block;width:200px;overflow:hidden;padding:6px 0;text-align:center;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);-transform:rotate(45deg);text-decoration:none;color:#fff;position:inherit;top:45px;right:-40px;border-width:1px 0;border-style:dotted;border-color:rgba(255, 255, 255, 0.7);font:700 13px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.5);background-color:#a00;" href="//github.com/xudafeng">Fork me on Github</a></div>
+<div class="reveal">
+  <div class="slides">
+    <section
+      data-markdown="./src/content.md"
+      data-separator="^\n-\s+-\s+-\n"
+      data-charset="utf-8">
+    </section>
+  </div>
+</div>
+<script src="../../assets/lib/js/head.min.js"></script>
+<script src="../../assets/js/reveal.js"></script>
+<script>
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+  width: 1280,
+  height: 800,
+  transition: 'concave',
+  dependencies: [
+    {
+      src: '../../assets/lib/js/classList.js',
+      condition: function() {
+        return !document.body.classList;
+      }
+    }, {
+      src: '../../assets/plugin/markdown/marked.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: '../../assets/plugin/markdown/markdown.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: '../../assets/plugin/highlight/highlight.js',
+      async: true,
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      },
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }, {
+      src: '../../assets/plugin/zoom-js/zoom.js',
+      async: true
+    }, {
+      src: '../../assets/plugin/notes/notes.js',
+      async: true
+    }
+  ]
+});
+</script>
+</body>
+</html>

@@ -61,7 +61,7 @@ render() {
 
 # Native
 
-```shell
+```bash
 $ react run app.js
 ```
 
@@ -114,19 +114,63 @@ $ react run app.js
 
 - - -
 
+### E2E
+
 ```javascript
 
-...
 
-it('render container style', function() {
-  const style = component.props.style;
-  style.position.should.be.equal('relative');
-  style.height.should.be.equal(Math.ceil(tempString.length / (props.containerWidth / itemStyle.width)) * itemStyle.height);
+describe('test/example.test.js', () => {
+  describe('page func testing', () => {
+    before(() => {
+      return driver
+        .initWindow({
+          width: 375,
+          height: 667,
+          deviceScaleFactor: 2
+        });
+    });
+
+    afterEach(function () {
+      return driver
+        .coverage()
+        .saveScreenshots(this);
+    });
+
+    after(() => {
+      return driver
+        .openReporter(false)
+        .quit();
+    });
+
+    it('page render should be ok', () => {
+      return driver
+        .getUrl(`${BASE_URL}/examples`)
+        .setWindowSize(800, 600)
+        .sleep(1000);
+    });
+  });
 });
 
-...
-
 ```
+
+- - -
+
+### Unit
+
+- - -
+
+## Coverage
+
+- [macaca-coverage](//github.com/macacajs/macaca-coverage)
+
+- - -
+
+### More Samples
+
+- [react-sample](//github.com/macaca-sample/react-sample) - Macaca test sample for browser React
+- [vue-sample](//github.com/macaca-sample/vue-sample) - Macaca test sample for browser framework Vue.js
+- [coverage-sample](//github.com/macaca-sample/coverage-sample) - Coverage sample
+- [awesome-macaca](//github.com/macacajs/awesome-macaca) List of awesome things regarding Macaca.
 
 - - -
 
