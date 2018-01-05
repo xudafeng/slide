@@ -6,7 +6,7 @@
 
 - - -
 
-<img data-src="https://wx1.sinaimg.cn/large/6d308bd9gy1fn4u7o5xd1j205k05k0si.jpg" style="width: 260px;" />
+<img data-src="//wx1.sinaimg.cn/large/6d308bd9gy1fn4u7o5xd1j205k05k0si.jpg" style="width: 260px;" />
 
 - - -
 
@@ -28,15 +28,15 @@
 
 - - -
 
-<iframe data-src="https://xudafeng.github.io/wordle"></iframe>
+<iframe data-src="//xudafeng.github.io/wordle"></iframe>
 
-[wordle](https://github.com/xudafeng/wordle) - wordle based on Vue.
+[wordle](//github.com/xudafeng/wordle) - wordle based on Vue.
 
 - - -
 
-<iframe data-src="https://xudafeng.github.io/jspiral"></iframe>
+<iframe data-src="//xudafeng.github.io/jspiral"></iframe>
 
-[jspiral](https://github.com/xudafeng/jspiral) - 🌀JavaScript Implementation of 2D spiral
+[jspiral](//github.com/xudafeng/jspiral) - 🌀JavaScript Implementation of 2D spiral
 
 - - -
 
@@ -44,7 +44,7 @@
 
 - - -
 
-<iframe data-src="https://xudafeng.github.io/wordle/3d"></iframe>
+<iframe data-src="//xudafeng.github.io/wordle/3d"></iframe>
 
 - - -
 
@@ -56,10 +56,10 @@
 
 - - -
 
-<img data-src="https://ww2.sinaimg.cn/large/6d308bd9gw1f0c1u7y1tbj21eq12ctt0.jpg" style="width: 600px" />
+<img data-src="//ww2.sinaimg.cn/large/6d308bd9gw1f0c1u7y1tbj21eq12ctt0.jpg" style="width: 600px" />
 
-- [java_inheritance](https://github.com/doing-data-science/java_inheritance)
-- [objc_inheritance](https://github.com/doing-data-science/objc_inheritance)
+- [java_inheritance](//github.com/doing-data-science/java_inheritance)
+- [objc_inheritance](//github.com/doing-data-science/objc_inheritance)
 
 - - -
 
@@ -67,15 +67,26 @@
 
 - - -
 
-![](http://ww1.sinaimg.cn/large/6d308bd9gw1fauyb4ybb7g20x40k0e84.gif)
+![](//ww1.sinaimg.cn/large/6d308bd9gw1fauyb4ybb7g20x40k0e84.gif)
 
-[doing-data-science/algorithm-collection](https://github.com/doing-data-science/algorithm-collection)
+[doing-data-science/algorithm-collection](//github.com/doing-data-science/algorithm-collection)
 
 - - -
 
-<img data-src="http://ww4.sinaimg.cn/large/6d308bd9gw1fauyb66cehg20jo0k0qv8.gif" style="width: 600px;"/>
+<img data-src="//ww4.sinaimg.cn/large/6d308bd9gw1fauyb66cehg20jo0k0qv8.gif" style="width: 600px;"/>
 
-[astar](https://pillowjs.github.io/pillow-sample/astar/)
+[astar](//pillowjs.github.io/pillow-sample/astar/)
+
+- - -
+
+### Color Visualization
+
+- - -
+
+<iframe data-src="//xudafeng.github.io/color-viewer"></iframe>
+
+- [color-viewer](//github.com/xudafeng/color-viewer)
+- [canvas-color](//github.com/xudafeng/canvas-color)
 
 - - -
 
@@ -83,15 +94,15 @@
 
 - - -
 
-<iframe data-src="https://xudafeng.github.io/umlplot/plantuml.html"></iframe>
+<iframe data-src="//xudafeng.github.io/umlplot/plantuml.html"></iframe>
 
 - - -
 
-<iframe data-src="https://xudafeng.github.io/umlplot/mermaid.html"></iframe>
+<iframe data-src="//xudafeng.github.io/umlplot/mermaid.html"></iframe>
 
 - - -
 
-<iframe data-src="https://zhuyali.github.io/d3-tree"></iframe>
+<iframe data-src="//zhuyali.github.io/d3-tree"></iframe>
 
 - [macaca-reporter](//github.com/macacajs/macaca-reporter)
 - [d3-tree](//github.com/zhuyali/d3-tree)
@@ -100,18 +111,18 @@
 
 # Python
 
-- [matplotlib](https://github.com/matplotlib/matplotlib)
+- [matplotlib](//github.com/matplotlib/matplotlib)
 
 - - -
 
 # R
 
-- [ggplot2](https://github.com/tidyverse/ggplot2)
-- [rwork](https://github.com/xudafeng/rwork)
+- [ggplot2](//github.com/tidyverse/ggplot2)
+- [rwork](//github.com/xudafeng/rwork)
 
 - - -
 
-![](https://wx3.sinaimg.cn/large/6d308bd9gy1fn4ucndp4gj20dw09vdfv.jpg)
+![](//wx3.sinaimg.cn/large/6d308bd9gy1fn4ucndp4gj20dw09vdfv.jpg)
 
 - - -
 

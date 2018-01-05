@@ -7,7 +7,16 @@
     "url": "git://github.com/xudafeng/slide.git"
   },
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "startserver": "*"
+  },
+  "pre-commit": [
+    "pre-commit"
+  ],
+  "scripts": {
+    "pre-commit": "npm run build",
+    "build": "./build.sh",
+    "server": "startserver -p 8081 -s"
   },
   "author": "xudafeng",
   "license": "MIT"
