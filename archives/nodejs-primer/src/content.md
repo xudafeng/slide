@@ -331,6 +331,7 @@ reverse string in bash echo
 $ echo 1234567 | node ./sort.js
 $ 7654321
 ```
+
 - - -
 
 # Testing
