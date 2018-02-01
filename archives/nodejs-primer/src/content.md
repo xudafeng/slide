@@ -331,13 +331,49 @@ reverse string in bash echo
 $ echo 1234567 | node ./sort.js
 $ 7654321
 ```
-
 - - -
 
 # Testing
 
 - [Function Unit Sample](//github.com/node-modules/detect-port)
 - [E2E Unit Sample](//github.com/macacajs/awesome-macaca#examples)
+
+- - -
+
+# Trace
+
+- [logger.error](//github.com/xudafeng/xlogger/blob/master/lib/xlogger.js)
+- console.trace
+- Error.captureStackTrace
+
+<!--
+const obj = {};
+
+Error.captureStackTrace(obj);
+
+console.log('error stack', obj.stack);
+-->
+
+- - -
+
+# Process
+
+- [exitcodes](http://www.tldp.org/LDP/abs/html/exitcodes.html)
+- [signal](http://man7.org/linux/man-pages/man7/signal.7.html)
+- child unref
+
+- - -
+
+# Async I/O
+
+- - -
+
+- select, poll, epoll
+- Network [File I/O](http://docs.libuv.org/en/v1.x/design.html#file-i-o)
+
+- - -
+
+![](http://docs.libuv.org/en/v1.x/_images/loop_iteration.png)
 
 - - -
 
