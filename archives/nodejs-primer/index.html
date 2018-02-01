@@ -85,6 +85,50 @@ document.getElementsByTagName('head')[0].appendChild(link);
           }
         ]
       });
+
+      var indexOfParent = function(node) {
+        var children = node.parentNode.children;
+        for (var i = children.length - 1; i >=0; i--) {
+          if (children[i] === node) {
+            return i;
+          }
+        }
+      };
+      var search = function(words) {
+        var slides = document.querySelectorAll('.slides section');
+        for (var i = slides.length - 1; i >=0; i--) {
+          var slide = slides[i];
+          var html = slide.innerHTML;
+          var reg = new RegExp('[<>]' + words + '[<>]');
+          var hit = reg.test(html);
+          if (hit) {
+            var currentNode = slides[i];
+            var level1 = indexOfParent(currentNode);
+            var level2 = indexOfParent(currentNode.parentNode);
+            location.hash = `#/${level2}/${level1}`;
+            break;
+          }
+        }
+      };
+      window.addEventListener('load', function() {
+        var anchors = document.querySelectorAll('a');
+        for (var i = 0; i < anchors.length; i++) {
+          anchors[i].addEventListener('click', function(e) {
+            var target = e.currentTarget;
+            var href = target.href;
+            var hit = !!~href.lastIndexOf('#inner');
+            var words = target.innerText;
+            if (hit) {
+              e.preventDefault();
+              try {
+                search(words);
+              } catch (e) {
+                console.log(e.stack);
+              }
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>

@@ -2,6 +2,16 @@
 
 - - -
 
+- [Modules](#inner)
+- [Async](#inner)
+- [Addons](#inner)
+- [Trace](#inner)
+- [Process](#inner)
+- [Stream](#inner)
+- [Testing](#inner)
+
+- - -
+
 # Modules
 
 - [wiki](http://wiki.commonjs.org/wiki/Modules/1.1.1)
@@ -51,19 +61,40 @@ Module._initPaths = function() {
 
 - - -
 
+```javascript
+console.log(module.paths);
+```
+
+- - -
+
 ### Workshop #1
 
-0. print the relative path of `macaca-cli`
+0. print the relative path of [macaca-cli](//github.com/macacajs/macaca-cli)
 0. how to clear module cache
 
-<!--
+- - -
+
+```javascript
 const d = require.resolve('macaca-cli');
 delete require.cache(d);
--->
+```
 
 - - -
 
 # Async
+
+- - -
+
+## Async I/O
+
+- - -
+
+- select, poll, epoll
+- Network [File I/O](http://docs.libuv.org/en/v1.x/design.html#file-i-o)
+
+- - -
+
+![](http://docs.libuv.org/en/v1.x/_images/loop_iteration.png)
 
 - - -
 
@@ -191,12 +222,29 @@ const asyncMethod = function() {
 
 - - -
 
-# Stream
+# Trace
+
+- [logger.error](//github.com/xudafeng/xlogger/blob/master/lib/xlogger.js)
+- console.trace
+- Error.captureStackTrace
+
+<!--
+const obj = {};
+Error.captureStackTrace(obj);
+console.log('error stack', obj.stack);
+-->
 
 - - -
 
-- read big file
-- Terminal
+# Process
+
+- [exitcodes](http://www.tldp.org/LDP/abs/html/exitcodes.html)
+- [signal](http://man7.org/linux/man-pages/man7/signal.7.html)
+- child unref
+
+- - -
+
+# Stream
 
 - - -
 
@@ -223,7 +271,7 @@ setInterval(() => {
 
 - - -
 
-### [Writable Stream](https://github.com/xudafeng/bash/blob/master/scripts/color.js)
+### [Writable Stream](//github.com/xudafeng/bash/blob/master/scripts/color.js)
 
 ```javascript
 const stream = require('stream');
@@ -284,71 +332,12 @@ $ echo 1234567 | node ./sort.js
 $ 7654321
 ```
 
-<!--
-const stream = require('stream');
-
-function TransStream(options) {
-  stream.Writable.call(this, options);
-}
-
-TransStream.prototype = Object.create(stream.Writable.prototype, {
-  constructor: {
-    value: TransStream
-  }
-});
-
-TransStream.prototype._write = function(chunk, encoding, callback) {
-  const list = Array.prototype.reverse.call(chunk.toString().trim().split(''));
-  process.stdout.write(`${list.join('')}\n`);
-  callback();
-};
-
-process.stdin.pipe(new TransStream());
--->
-
 - - -
 
 # Testing
 
 - [Function Unit Sample](//github.com/node-modules/detect-port)
 - [E2E Unit Sample](//github.com/macacajs/awesome-macaca#examples)
-
-- - -
-
-# Trace
-
-- [logger.error](//github.com/xudafeng/xlogger/blob/master/lib/xlogger.js)
-- console.trace
-- Error.captureStackTrace
-
-<!--
-const obj = {};
-
-Error.captureStackTrace(obj);
-
-console.log('error stack', obj.stack);
--->
-
-- - -
-
-# Process
-
-- [exitcodes](http://www.tldp.org/LDP/abs/html/exitcodes.html)
-- [signal](http://man7.org/linux/man-pages/man7/signal.7.html)
-- child unref
-
-- - -
-
-# Async I/O
-
-- - -
-
-- select, poll, epoll
-- Network [File I/O](http://docs.libuv.org/en/v1.x/design.html#file-i-o)
-
-- - -
-
-![](http://docs.libuv.org/en/v1.x/_images/loop_iteration.png)
 
 - - -
 
