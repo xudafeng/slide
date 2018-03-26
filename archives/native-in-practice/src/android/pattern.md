@@ -14,4 +14,4 @@
 
 - - -
 
-[sample](https://github.com/xudafeng/android-app-bootstrap)
+[sample](https://github.com/app-bootstrap/android-app-bootstrap)

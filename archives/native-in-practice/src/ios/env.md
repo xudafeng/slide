@@ -7,7 +7,7 @@
 - Xcode 介绍
 - 使用模拟器
 - [iOS Developer Library](https://developer.apple.com/library/ios)
-- [上手示例](https://github.com/xudafeng/ios-app-bootstrap)
+- [上手示例](https://github.com/app-bootstrap/ios-app-bootstrap)
 
 - - -
 

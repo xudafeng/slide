@@ -4,7 +4,7 @@
 
 ## 开发环境介绍
 
-- [上手示例](https://github.com/xudafeng/android-app-bootstrap)
+- [上手示例](https://github.com/app-bootstrap/android-app-bootstrap)
 
 - - -
 
