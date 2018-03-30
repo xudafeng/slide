@@ -32,7 +32,7 @@ Socket.getInputStream();
 ## android.webkit.WebView
 
 - addJavascriptInterface
-- [WebViewJsBridge](https://github.com/xudafeng/WebViewJsBridge)
+- [WebViewJsBridge](https://github.com/app-bootstrap/WebViewJsBridge)
 - onPageFinished
 - shouldOverrideUrlLoading
 

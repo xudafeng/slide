@@ -136,7 +136,7 @@ NSTimer timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector
 ### Inherit
 
 ```objc
-// https://github.com/xudafeng/JsWebView
+// https://github.com/app-bootstrap/JsWebView
 // JsWebViewController.h
 @interface JsWebViewController: UIViewController
 @property (strong, nonatomic) NSString *url;
@@ -337,7 +337,7 @@ class Singer {
 ### Inherit
 
 ```swift
-// https://github.com/xudafeng/swifty-webview
+// https://github.com/app-bootstrap/swifty-webview
 class CustomWebview: UIWebView {
   func loadURL(urlString: String) {
     let url: NSURL = NSURL(string: urlString)!;

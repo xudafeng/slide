@@ -96,4 +96,4 @@ $ carthage update --platform iOS --verbose
 
 ## Framework
 
-[Logger.swift sample](https://github.com/xudafeng/Logger.swift)
+[Logger.swift sample](https://github.com/app-bootstrap/Logger.swift)

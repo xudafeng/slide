@@ -16,5 +16,5 @@
 ## [Macaca](https://macacajs.github.io/macaca)
 
 - [macaca-ios](https://github.com/macacajs/macaca-ios)
-- [xctest-client](https://github.com/xudafeng/xctest-client)
+- [XCTestWD](https://github.com/macacajs/XCTestWD)
 - [ios-simulator](https://github.com/macacajs/ios-simulator)
