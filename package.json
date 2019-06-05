@@ -7,12 +7,14 @@
     "url": "git://github.com/xudafeng/slide.git"
   },
   "devDependencies": {
-    "pre-commit": "^1.2.2",
+    "husky": "^3.0.5",
     "startserver": "*"
   },
-  "pre-commit": [
-    "pre-commit"
-  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  },
   "scripts": {
     "pre-commit": "npm run build",
     "build": "./build.sh",

@@ -81,11 +81,11 @@ Macaca 是由支付宝国际无线团队研发的自动化测试方案，<br/>
 
 - - -
 
-# Marmot 问世
+# Reliable 问世
 
-> https://macacajs.github.io/marmot
+> https://macacajs.github.io/reliable
 
-2018.06.08 Marmot 问世，为各中小团队快速建立自有无线工程服务带来了更多想象。
+2018.06.08 Reliable 问世，为各中小团队快速建立自建测试套件服务带来了更多想象。
 
 - - -
 
