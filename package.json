@@ -17,9 +17,8 @@
   },
   "scripts": {
     "pre-commit": "npm run build",
-    "build": "./build.sh",
+    "build": "node ./build.js",
     "server": "startserver -p 8081 -s"
   },
-  "author": "xudafeng",
   "license": "MIT"
 }
