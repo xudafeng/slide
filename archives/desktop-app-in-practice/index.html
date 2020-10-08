@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>桌面端技术</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+<link rel="stylesheet" href="../../assets/css/reveal.css">
+<link rel="stylesheet" href="../../assets/css/theme/wd.css">
+<link rel="stylesheet" href="../../assets/lib/css/railscasts.css">
+<link rel="stylesheet" href="../../assets/css/custom.css">
+<!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+<!-- Printing and PDF exports -->
+<script>
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = location.search.match(/print-pdf/gi) ? '../../assets/css/print/pdf.css' : '../../assets/css/print/paper.css';
+  document.getElementsByTagName('head')[0].appendChild(link);
+
+  if (location.search.match(/print-pdf/gi)) {
+    window.print();
+  }
+</script>
+<base target="_blank"/>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section
+      data-markdown="./src/index.md"
+      data-separator="^\n-\s+-\s+-\n"
+      data-charset="utf-8">
+    </section>
+  </div>
+</div>
+<script src="../../assets/lib/js/head.min.js"></script>
+<script src="../../assets/js/reveal.js"></script>
+<script>
+Reveal.initialize({
+  progress: true,
+  center: true,
+  controls: true,
+  history: true,
+  width: 1280,
+  height: 800,
+  transition: 'convex',
+  dependencies: [{
+    src: '../../assets/lib/js/classList.js',
+    condition: function() {
+      return !document.body.classList;
+    }
+  }, {
+    src: '../../assets/plugin/markdown/marked.js',
+    condition: function() {
+      return !!document.querySelector('[data-markdown]');
+    }
+  }, {
+    src: '../../assets/plugin/markdown/markdown.js',
+    condition: function() {
+      return !!document.querySelector('[data-markdown]');
+    }
+  }, {
+    src: '../../assets/plugin/highlight/highlight.js',
+    async: true,
+    condition: function() {
+      return !!document.querySelector('[data-markdown]');
+    },
+    callback: function() {
+      hljs.initHighlightingOnLoad();
+    }
+  }, {
+    src: '../../assets/plugin/zoom-js/zoom.js',
+    async: true
+  }, {
+    src: '../../assets/plugin/notes/notes.js',
+    async: true
+  }]
+});
+var indexOfParent = function(node) {
+  var children = node.parentNode.children;
+  for (var i = children.length - 1; i >=0; i--) {
+    if (children[i] === node) {
+      return i;
+    }
+  }
+};
+var search = function(words) {
+  var slides = document.querySelectorAll('.slides section');
+  for (var i = slides.length - 1; i >=0; i--) {
+    var slide = slides[i];
+    var html = slide.innerHTML;
+    var reg = new RegExp('[<>]' + words + '[<>]');
+    var hit = reg.test(html);
+    if (hit) {
+      var currentNode = slides[i];
+      var level1 = indexOfParent(currentNode);
+      var level2 = indexOfParent(currentNode.parentNode);
+      location.hash = `#/${level2}/${level1}`;
+      break;
+    }
+  }
+};
+window.addEventListener('load', function() {
+  var anchors = document.querySelectorAll('a');
+  for (var i = 0; i < anchors.length; i++) {
+    anchors[i].addEventListener('click', function(e) {
+      var target = e.currentTarget;
+      var href = target.href;
+      var hit = !!~href.lastIndexOf('#inner');
+      var words = target.innerText;
+      if (hit) {
+        e.preventDefault();
+        try {
+          search(words);
+        } catch (e) {
+          console.log(e.stack);
+        }
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
