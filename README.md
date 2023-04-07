@@ -13,6 +13,7 @@
 - [civet](./archives/civet)
 - [csssecrets](./archives/csssecrets)
 - [datavis](./archives/datavis)
+- [desktop-app-in-practice](./archives/desktop-app-in-practice)
 - [docker-in-practice](./archives/docker-in-practice)
 - [javascript](./archives/javascript)
 - [javascript-in-practice](./archives/javascript-in-practice)
